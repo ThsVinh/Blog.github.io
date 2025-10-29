@@ -1,0 +1,26 @@
+# config/_default/params.toml
+
+[sidebar]
+  home = "right" # Hiển thị thanh bên ở bên phải trên trang chủ
+  posts = "right" # Có thể hiển thị ở trang bài viết
+
+[widgets]
+  enabled = ["profile", "recent", "categories", "tagcloud", "social"] 
+  # Bật các widget cần thiết: profile, bài viết gần đây, v.v.
+
+[widgets.profile]
+  enabled = true # Bật widget Profile
+  showDescription = true # Hiển thị mô tả profile
+  showImage = true # Hiển thị ảnh profile
+  imageTitle = "Trần Thái Vinh" # Tên sẽ hiển thị bên dưới ảnh
+  image = "images/thaivinh.jpg" # Đặt ảnh của bạn vào thư mục static/images/
+
+  # Đường dẫn: config/_default/params.toml
+
+[author]
+  name = "Trần Thái Vinh"
+  headline = "Full-Stack Developer"
+  # Chỉ định đường dẫn ảnh. Hugo sẽ tự động tìm trong static/
+  # Không cần thêm /static/
+  image = "images/thaivinh.jpg" 
+  description = "..."

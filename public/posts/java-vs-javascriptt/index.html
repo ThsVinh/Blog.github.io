@@ -1,0 +1,576 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html
+  lang="vi-vn"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head><script src="/ThsVinh/Blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=ThsVinh/Blog/livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  
+  <title>Java vs JavaScript &middot; Trần Thái Vinh - Blog</title>
+    <meta name="title" content="Java vs JavaScript &middot; Trần Thái Vinh - Blog" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="http://localhost:1313/ThsVinh/Blog/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
+  ></script>
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="http://localhost:1313/ThsVinh/Blog/css/main.bundle.min.a287b55be30db9381c0341789580de110106fe65ace13a03f5a738bb97328822.css"
+    integrity="sha256-ooe1W&#43;MNuTgcA0F4lYDeEQEG/mWs4ToD9ac4u5cyiCI="
+  />
+  
+  
+  
+  
+  
+  
+  
+  <meta
+    name="description"
+    content="
+      
+        🧭 Giới thiệu #Khi nói đến lập trình web, hai ngôn ngữ Java và JavaScript thường được nhắc đến nhiều nhất.
+Mặc dù tên khá giống nhau, nhưng mục đích và cách sử dụng của chúng hoàn toàn khác biệt.
+Bài viết này sẽ giúp bạn hiểu rõ hơn về sự khác nhau giữa Java (backend) và JavaScript (frontend), đồng thời có ví dụ thực tế để thấy cách chúng kết hợp trong một dự án web hoàn chỉnh.
+      
+    "
+  />
+  
+  
+  
+  
+    <link rel="canonical" href="http://localhost:1313/ThsVinh/Blog/posts/java-vs-javascriptt/" />
+  
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/ThsVinh/Blog/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/ThsVinh/Blog/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/ThsVinh/Blog/favicon-16x16.png" />
+    <link rel="manifest" href="/ThsVinh/Blog/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="http://localhost:1313/ThsVinh/Blog/posts/java-vs-javascriptt/">
+  <meta property="og:site_name" content="Trần Thái Vinh - Blog">
+  <meta property="og:title" content="Java vs JavaScript">
+  <meta property="og:description" content="🧭 Giới thiệu #Khi nói đến lập trình web, hai ngôn ngữ Java và JavaScript thường được nhắc đến nhiều nhất.
+Mặc dù tên khá giống nhau, nhưng mục đích và cách sử dụng của chúng hoàn toàn khác biệt.
+Bài viết này sẽ giúp bạn hiểu rõ hơn về sự khác nhau giữa Java (backend) và JavaScript (frontend), đồng thời có ví dụ thực tế để thấy cách chúng kết hợp trong một dự án web hoàn chỉnh.">
+  <meta property="og:locale" content="vi_vn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-20T17:14:15+07:00">
+    <meta property="article:modified_time" content="2025-10-20T17:14:15+07:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Java vs JavaScript">
+  <meta name="twitter:description" content="🧭 Giới thiệu #Khi nói đến lập trình web, hai ngôn ngữ Java và JavaScript thường được nhắc đến nhiều nhất.
+Mặc dù tên khá giống nhau, nhưng mục đích và cách sử dụng của chúng hoàn toàn khác biệt.
+Bài viết này sẽ giúp bạn hiểu rõ hơn về sự khác nhau giữa Java (backend) và JavaScript (frontend), đồng thời có ví dụ thực tế để thấy cách chúng kết hợp trong một dự án web hoàn chỉnh.">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "Java vs JavaScript",
+    "headline": "Java vs JavaScript",
+    
+    "abstract": "\u003ch2 id=\u0022-giới-thiệu\u0022 class=\u0022relative group\u0022\u003e🧭 Giới thiệu \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#-gi%e1%bb%9bi-thi%e1%bb%87u\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h2\u003e\u003cp\u003eKhi nói đến lập trình web, hai ngôn ngữ \u003cstrong\u003eJava\u003c\/strong\u003e và \u003cstrong\u003eJavaScript\u003c\/strong\u003e thường được nhắc đến nhiều nhất.\u003cbr\u003e\nMặc dù tên khá giống nhau, nhưng mục đích và cách sử dụng của chúng hoàn toàn khác biệt.\u003cbr\u003e\nBài viết này sẽ giúp bạn hiểu rõ hơn về sự khác nhau giữa \u003cstrong\u003eJava (backend)\u003c\/strong\u003e và \u003cstrong\u003eJavaScript (frontend)\u003c\/strong\u003e, đồng thời có ví dụ thực tế để thấy cách chúng kết hợp trong một dự án web hoàn chỉnh.\u003c\/p\u003e",
+    "inLanguage": "vi-vn",
+    "url" : "http:\/\/localhost:1313\/ThsVinh\/Blog\/posts\/java-vs-javascriptt\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Trần Thái Vinh"
+    },
+    "copyrightYear": "2025",
+    "dateCreated": "2025-10-20T17:14:15\u002b07:00",
+    "datePublished": "2025-10-20T17:14:15\u002b07:00",
+    
+    "dateModified": "2025-10-20T17:14:15\u002b07:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "497"
+  }
+  </script>
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/ThsVinh/Blog/",
+       "name": "Blog Lập Trình Trần Thái Vinh",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/ThsVinh/Blog/posts/",
+       "name": "Posts",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "name": "Java vs Java Script",
+       "position": 3
+     }
+   ]
+ }
+  </script>
+
+  
+  
+    <meta name="author" content="Trần Thái Vinh" />
+  
+  
+  
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+</head>
+<body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >Skip to main content</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/ThsVinh/Blog/"
+    >Trần Thái Vinh - Blog</a
+  >
+
+    </div>
+    
+    
+      <ul class="flex list-none flex-col text-end sm:flex-row">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/ThsVinh/Blog/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Home</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/ThsVinh/Blog/posts/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Posts</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/ThsVinh/Blog/profile/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Profile</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+          
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+      <h1 class="mb-8 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        Java vs JavaScript
+      </h1>
+      
+        <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2025-10-20 17:14:15 &#43;0700 &#43;07">October 20, 2025</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
+    
+
+    
+    
+  </div>
+
+  
+  
+
+
+        </div>
+      
+      
+    </header>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        <h2 id="-giới-thiệu" class="relative group">🧭 Giới thiệu <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-gi%e1%bb%9bi-thi%e1%bb%87u" aria-label="Anchor">#</a></span></h2><p>Khi nói đến lập trình web, hai ngôn ngữ <strong>Java</strong> và <strong>JavaScript</strong> thường được nhắc đến nhiều nhất.<br>
+Mặc dù tên khá giống nhau, nhưng mục đích và cách sử dụng của chúng hoàn toàn khác biệt.<br>
+Bài viết này sẽ giúp bạn hiểu rõ hơn về sự khác nhau giữa <strong>Java (backend)</strong> và <strong>JavaScript (frontend)</strong>, đồng thời có ví dụ thực tế để thấy cách chúng kết hợp trong một dự án web hoàn chỉnh.</p>
+<hr>
+<h2 id="-phần-1-so-sánh-java-và-javascript" class="relative group">⚙️ Phần 1: So sánh Java và JavaScript <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-ph%e1%ba%a7n-1-so-s%c3%a1nh-java-v%c3%a0-javascript" aria-label="Anchor">#</a></span></h2><table>
+  <thead>
+      <tr>
+          <th>Tiêu chí</th>
+          <th>Java</th>
+          <th>JavaScript</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Loại ngôn ngữ</strong></td>
+          <td>Ngôn ngữ lập trình hướng đối tượng, biên dịch</td>
+          <td>Ngôn ngữ thông dịch, động</td>
+      </tr>
+      <tr>
+          <td><strong>Môi trường chạy</strong></td>
+          <td>JVM (Java Virtual Machine)</td>
+          <td>Trình duyệt hoặc Node.js</td>
+      </tr>
+      <tr>
+          <td><strong>Ứng dụng chính</strong></td>
+          <td>Backend (Spring Boot, Jakarta EE, Android)</td>
+          <td>Frontend (React, Vue, Angular)</td>
+      </tr>
+      <tr>
+          <td><strong>Cú pháp</strong></td>
+          <td>Cứng nhắc, kiểu dữ liệu tĩnh</td>
+          <td>Linh hoạt, kiểu dữ liệu động</td>
+      </tr>
+      <tr>
+          <td><strong>Tốc độ</strong></td>
+          <td>Nhanh, tối ưu nhờ JVM</td>
+          <td>Nhanh trên trình duyệt, nhưng phụ thuộc JS engine</td>
+      </tr>
+      <tr>
+          <td><strong>Triển khai</strong></td>
+          <td>File <code>.jar</code> hoặc <code>.war</code></td>
+          <td>File <code>.html</code>, <code>.js</code> trong web</td>
+      </tr>
+  </tbody>
+</table>
+<p>👉 <strong>Kết luận:</strong></p>
+<ul>
+<li><strong>Java</strong> mạnh mẽ, ổn định, phù hợp cho <strong>backend</strong>.</li>
+<li><strong>JavaScript</strong> linh hoạt, dễ thao tác với <strong>giao diện người dùng</strong>.<br>
+Khi kết hợp cả hai, ta có thể tạo nên ứng dụng <strong>fullstack</strong> mạnh mẽ.</li>
+</ul>
+<hr>
+<h2 id="-phần-2-ứng-dụng-thực-tế--xây-dựng-web-đơn-giản" class="relative group">🚀 Phần 2: Ứng dụng thực tế — Xây dựng web đơn giản <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-ph%e1%ba%a7n-2-%e1%bb%a9ng-d%e1%bb%a5ng-th%e1%bb%b1c-t%e1%ba%bf--x%c3%a2y-d%e1%bb%b1ng-web-%c4%91%c6%a1n-gi%e1%ba%a3n" aria-label="Anchor">#</a></span></h2><p>Chúng ta sẽ tạo một ví dụ nhỏ:</p>
+<ul>
+<li><strong>Backend (Java Spring Boot):</strong> Trả về API lời chào.</li>
+<li><strong>Frontend (JavaScript):</strong> Gọi API và hiển thị lời chào đó lên trang web.</li>
+</ul>
+<h3 id="-cấu-trúc-dự-án" class="relative group">🧩 Cấu trúc dự án <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-c%e1%ba%a5u-tr%c3%bac-d%e1%bb%b1-%c3%a1n" aria-label="Anchor">#</a></span></h3><pre tabindex="0"><code>demo-fullstack/
+├── backend/
+│   └── src/main/java/com/example/demo/
+│       ├── DemoApplication.java
+│       └── controller/HelloController.java
+└── frontend/
+    └── index.html
+</code></pre><hr>
+<h2 id="-backend-java-spring-boot" class="relative group">🖥️ Backend: Java (Spring Boot) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-backend-java-spring-boot" aria-label="Anchor">#</a></span></h2><p><strong>File:</strong> <code>HelloController.java</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">package</span> com.example.demo.controller;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> org.springframework.web.bind.annotation.GetMapping;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> org.springframework.web.bind.annotation.RestController;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@RestController</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HelloController</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@GetMapping</span>(<span style="color:#e6db74">&#34;/api/hello&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">sayHello</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Xin chào từ Spring Boot!&#34;</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>File:</strong> <code>DemoApplication.java</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">package</span> com.example.demo;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> org.springframework.boot.SpringApplication;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> org.springframework.boot.autoconfigure.SpringBootApplication;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@SpringBootApplication</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DemoApplication</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>        SpringApplication.<span style="color:#a6e22e">run</span>(DemoApplication.<span style="color:#a6e22e">class</span>, args);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Chạy ứng dụng bằng lệnh:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mvn spring-boot:run
+</span></span></code></pre></div><p>Mở trình duyệt tại địa chỉ <strong>http://localhost:8080/api/hello</strong> để xem kết quả.</p>
+<hr>
+<h2 id="-frontend-javascript-fetch-api" class="relative group">🌐 Frontend: JavaScript (Fetch API) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-frontend-javascript-fetch-api" aria-label="Anchor">#</a></span></h2><p><strong>File:</strong> <code>index.html</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;vi&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">title</span>&gt;Kết nối Java <span style="color:#960050;background-color:#1e0010">&amp;</span> JavaScript&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">h1</span>&gt;💻 Demo Java <span style="color:#960050;background-color:#1e0010">&amp;</span> JavaScript&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;load&#34;</span>&gt;Gọi API&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;result&#34;</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>    document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;load&#34;</span>).<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#34;click&#34;</span>, <span style="color:#66d9ef">async</span> () =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">res</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#e6db74">&#34;http://localhost:8080/api/hello&#34;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">text</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">text</span>();
+</span></span><span style="display:flex;"><span>      document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;result&#34;</span>).<span style="color:#a6e22e">innerText</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">text</span>;
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><p>Khi nhấn nút <strong>“Gọi API”</strong>, trình duyệt sẽ gửi yêu cầu đến <strong>Spring Boot</strong> và hiển thị thông điệp trả về.</p>
+<hr>
+<h2 id="-tổng-kết" class="relative group">🧠 Tổng kết <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-t%e1%bb%95ng-k%e1%ba%bft" aria-label="Anchor">#</a></span></h2><ul>
+<li><strong>Java</strong> đảm nhận phần xử lý dữ liệu và API (backend).</li>
+<li><strong>JavaScript</strong> đảm nhận phần hiển thị và tương tác người dùng (frontend).</li>
+<li>Khi kết hợp, ta có mô hình <strong>Fullstack</strong> đơn giản, mạnh mẽ và dễ mở rộng.</li>
+</ul>
+<p>✨ Hy vọng bài viết này giúp bạn hiểu rõ hơn cách <strong>Java và JavaScript</strong> phối hợp để xây dựng ứng dụng web thực tế.</p>
+
+      </div>
+    </section>
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+  <div class="flex">
+    
+    
+    
+      
+      
+    
+    <div class="place-self-center">
+      
+        <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+          Author
+        </div>
+        <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+          Trần Thái Vinh
+        </div>
+      
+      
+      <div class="text-2xl sm:text-lg">
+</div>
+    </div>
+  </div>
+
+
+      
+
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="group flex" href="http://localhost:1313/ThsVinh/Blog/posts/java-vs-javascript-web-thucte/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Java và JavaScript trong phát triển web thực tế</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-10-20 00:00:00 &#43;0000 UTC">October 20, 2025</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+      </main>
+      
+        <div
+          class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12"
+          id="to-top"
+          hidden="true"
+        >
+          <a
+            href="#the-top"
+            class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+            aria-label="Scroll to top"
+            title="Scroll to top"
+          >
+            &uarr;
+          </a>
+        </div>
+      <footer class="py-10 print:hidden">
+  
+  
+  <div class="flex items-center justify-between">
+    <div>
+      
+      
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+            &copy;
+            2025
+            Trần Thái Vinh
+        </p>
+      
+      
+      
+        <p class="text-xs text-neutral-500 dark:text-neutral-400">
+          
+          
+          Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+            href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://github.com/jpanther/congo" target="_blank" rel="noopener noreferrer">Congo</a>
+        </p>
+      
+    </div>
+    <div class="flex flex-row items-center">
+      
+      
+      
+      
+    </div>
+  </div>
+  
+  
+</footer>
+
+    </div>
+  </body>
+</html>

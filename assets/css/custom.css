@@ -1,0 +1,59 @@
+/* assets/css/custom.css */
+
+/* Ghi đè màu nền chính (Xanh đậm/Tím than) */
+:root {
+    --background-color: #3c3b3b; /* Tông màu tím than đậm */
+    --surface-color: #1c0e3a;    /* Tông màu nền card */
+    --primary-color: #fbfbfb;    /* Màu tím Neon cho điểm nhấn/link */
+    --text-color: #f0f0f0;       /* Màu chữ sáng */
+    --secondary-color: #f7f4f7;  /* Màu chữ phụ */
+}
+
+/* Áp dụng màu nền */
+body {
+    background-color: var(--background-color) !important;
+    font-size: 1.15em !important; 
+    line-height: 1.8 !important; /* Tăng khoảng cách dòng để dễ đọc hơn trên nền tối */
+
+
+/* Tùy chỉnh kích thước cho các tiêu đề chính */
+h1 {
+    font-size: 2.2em !important;
+}
+
+h2 {
+    font-size: 1.8em !important;
+}
+
+h3 {
+    font-size: 1.5em !important;
+}
+
+/* Đảm bảo chữ trong các thẻ code (đặc biệt trong bài post) cũng dễ đọc */
+code, pre {
+    font-size: 0.95em !important;
+    line-height: 1.5 !important;
+}
+
+/* Tăng kích thước chữ cho menu điều hướng */
+.menu-main a {
+    font-size: 1.1em !important;
+}
+
+/* Tăng kích thước chữ cho danh sách bài viết trên trang Blog */
+/* Đảm bảo tiêu đề bài viết (h3) trên trang posts/ cũng rõ ràng */
+.post-list h3 {
+    font-size: 1.3em !important;
+}
+
+/* Ghi đè màu chữ và link */
+a {
+    color: var(--primary-color) !important;
+}
+
+/* Tùy chỉnh thêm các thành phần khác nếu cần */
+
+/* Tăng kích thước chữ cơ bản trên toàn bộ trang (body) */
+/* 1.1em hoặc 1.2em thường là kích thước thoải mái cho người đọc */
+}
+

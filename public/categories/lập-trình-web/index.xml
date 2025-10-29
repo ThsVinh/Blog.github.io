@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lập Trình Web on Trần Thái Vinh - Blog</title>
+    <link>http://localhost:1313/ThsVinh/Blog/categories/l%E1%BA%ADp-tr%C3%ACnh-web/</link>
+    <description>Recent content in Lập Trình Web on Trần Thái Vinh - Blog</description>
+    <generator>Hugo</generator>
+    <language>vi-vn</language>
+    <lastBuildDate>Mon, 20 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/ThsVinh/Blog/categories/l%E1%BA%ADp-tr%C3%ACnh-web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java và JavaScript trong phát triển web thực tế: Backend &amp; Frontend</title>
+      <link>http://localhost:1313/ThsVinh/Blog/posts/java-vs-javascript-web-thucte/</link>
+      <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ThsVinh/Blog/posts/java-vs-javascript-web-thucte/</guid>
+      <description>&lt;h2 id=&#34;-giới-thiệu&#34; class=&#34;relative group&#34;&gt;🌐 Giới thiệu &lt;span class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100&#34;&gt;&lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34; style=&#34;text-decoration-line: none !important;&#34; href=&#34;#-gi%e1%bb%9bi-thi%e1%bb%87u&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Trong phát triển web hiện đại, &lt;strong&gt;Java&lt;/strong&gt; thường được dùng ở &lt;strong&gt;phần backend&lt;/strong&gt;, còn &lt;strong&gt;JavaScript&lt;/strong&gt; lại thống trị &lt;strong&gt;phần frontend&lt;/strong&gt;.&lt;br&gt;&#xA;Sự kết hợp giữa &lt;strong&gt;Spring Boot (Java)&lt;/strong&gt; và &lt;strong&gt;React (JavaScript)&lt;/strong&gt; là một mô hình phổ biến trong các dự án &lt;strong&gt;Fullstack&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Bài viết này sẽ hướng dẫn bạn:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Cách tạo &lt;strong&gt;API backend bằng Java (Spring Boot)&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Cách gọi API đó từ &lt;strong&gt;frontend JavaScript (React)&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Cách hai phần “giao tiếp” với nhau.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-phần-1-backend-với-java-spring-boot&#34; class=&#34;relative group&#34;&gt;☕ Phần 1: Backend với Java (Spring Boot) &lt;span class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100&#34;&gt;&lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34; style=&#34;text-decoration-line: none !important;&#34; href=&#34;#-ph%e1%ba%a7n-1-backend-v%e1%bb%9bi-java-spring-boot&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Dưới đây là ví dụ tạo API đơn giản trả về lời chào:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

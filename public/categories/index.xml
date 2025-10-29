@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Trần Thái Vinh - Blog</title>
+    <link>http://localhost:1313/Blog.github.io/categories/</link>
+    <description>Recent content in Categories on Trần Thái Vinh - Blog</description>
+    <generator>Hugo</generator>
+    <language>vi-vn</language>
+    <lastBuildDate>Wed, 22 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/Blog.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fullstack</title>
+      <link>http://localhost:1313/Blog.github.io/categories/fullstack/</link>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Blog.github.io/categories/fullstack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hướng Dẫn</title>
+      <link>http://localhost:1313/Blog.github.io/categories/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/</link>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Blog.github.io/categories/h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lập Trình</title>
+      <link>http://localhost:1313/Blog.github.io/categories/l%E1%BA%ADp-tr%C3%ACnh/</link>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Blog.github.io/categories/l%E1%BA%ADp-tr%C3%ACnh/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Full-Stack</title>
+      <link>http://localhost:1313/Blog.github.io/categories/full-stack/</link>
+      <pubDate>Tue, 21 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Blog.github.io/categories/full-stack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Công Nghệ Web</title>
+      <link>http://localhost:1313/Blog.github.io/categories/c%C3%B4ng-ngh%E1%BB%87-web/</link>
+      <pubDate>Mon, 20 Oct 2025 17:14:15 +0700</pubDate>
+      <guid>http://localhost:1313/Blog.github.io/categories/c%C3%B4ng-ngh%E1%BB%87-web/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Công Nghệ</title>
+      <link>http://localhost:1313/Blog.github.io/categories/c%C3%B4ng-ngh%E1%BB%87/</link>
+      <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Blog.github.io/categories/c%C3%B4ng-ngh%E1%BB%87/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Công Nghệ Phần Mềm</title>
+      <link>http://localhost:1313/Blog.github.io/categories/c%C3%B4ng-ngh%E1%BB%87-ph%E1%BA%A7n-m%E1%BB%81m/</link>
+      <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Blog.github.io/categories/c%C3%B4ng-ngh%E1%BB%87-ph%E1%BA%A7n-m%E1%BB%81m/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

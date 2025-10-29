@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fullstack on Trần Thái Vinh - Blog</title>
+    <link>http://localhost:1313/Blog.github.io/tags/fullstack/</link>
+    <description>Recent content in Fullstack on Trần Thái Vinh - Blog</description>
+    <generator>Hugo</generator>
+    <language>vi-vn</language>
+    <lastBuildDate>Wed, 22 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/Blog.github.io/tags/fullstack/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Xây dựng ứng dụng Fullstack với Java Spring Boot và ReactJS – Hướng dẫn chi tiết từng bước </title>
+      <link>http://localhost:1313/Blog.github.io/posts/xay-dung-fullstack-java-react/</link>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Blog.github.io/posts/xay-dung-fullstack-java-react/</guid>
+      <description>&lt;h1 id=&#34;-giới-thiệu&#34; class=&#34;relative group&#34;&gt;🧭 Giới thiệu &lt;span class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100&#34;&gt;&lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34; style=&#34;text-decoration-line: none !important;&#34; href=&#34;#-gi%e1%bb%9bi-thi%e1%bb%87u&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;Bài hướng dẫn này đưa bạn qua các bước thực tế để tạo một ứng dụng quản lý người dùng (User Management) gồm:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Backend: Spring Boot (REST API, JPA, MySQL)&lt;/li&gt;&#xA;&lt;li&gt;Frontend: React (Vite hoặc Create React App)&lt;/li&gt;&#xA;&lt;li&gt;(Tùy chọn) Docker Compose để chạy MySQL + backend&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Mục tiêu: mã mẫu dễ copy/run, giải thích ngắn gọn để bạn mở rộng.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sự khác nhau giữa Java vs JavaScript</title>
+      <link>http://localhost:1313/Blog.github.io/posts/java-vs-javascript/</link>
+      <pubDate>Mon, 20 Oct 2025 17:14:15 +0700</pubDate>
+      <guid>http://localhost:1313/Blog.github.io/posts/java-vs-javascript/</guid>
+      <description>&lt;h2 id=&#34;-giới-thiệu&#34; class=&#34;relative group&#34;&gt;🧭 Giới thiệu &lt;span class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100&#34;&gt;&lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34; style=&#34;text-decoration-line: none !important;&#34; href=&#34;#-gi%e1%bb%9bi-thi%e1%bb%87u&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Trong thế giới lập trình web ngày nay, hai cái tên &lt;strong&gt;Java&lt;/strong&gt; và &lt;strong&gt;JavaScript&lt;/strong&gt; dường như luôn song hành với nhau.&lt;br&gt;&#xA;Tuy nhiên, điểm thú vị là: &lt;strong&gt;chúng hoàn toàn khác nhau&lt;/strong&gt; về nguồn gốc, cú pháp, cách hoạt động và cả mục đích sử dụng.&lt;/p&gt;&#xA;&lt;p&gt;Việc hiểu rõ &lt;strong&gt;sự khác biệt giữa Java và JavaScript&lt;/strong&gt; không chỉ giúp lập trình viên lựa chọn công nghệ phù hợp mà còn giúp họ biết &lt;strong&gt;cách kết hợp cả hai&lt;/strong&gt; để tạo ra những ứng dụng &lt;strong&gt;web fullstack&lt;/strong&gt; mạnh mẽ, hiện đại và dễ mở rộng.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Java và JavaScript trong phát triển web thực tế</title>
+      <link>http://localhost:1313/Blog.github.io/posts/java-vs-javascript-web-thucte/</link>
+      <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Blog.github.io/posts/java-vs-javascript-web-thucte/</guid>
+      <description>&lt;h2 id=&#34;-giới-thiệu&#34; class=&#34;relative group&#34;&gt;🌍 Giới thiệu &lt;span class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100&#34;&gt;&lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34; style=&#34;text-decoration-line: none !important;&#34; href=&#34;#-gi%e1%bb%9bi-thi%e1%bb%87u&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Trong thời đại số hóa, hầu hết các hệ thống phần mềm đều hướng tới mô hình &lt;strong&gt;ứng dụng web toàn diện (Fullstack Web Application)&lt;/strong&gt; — nơi người dùng tương tác qua trình duyệt, còn dữ liệu được xử lý ở máy chủ.&lt;/p&gt;&#xA;&lt;p&gt;Khi nhắc đến lập trình web, hai cái tên &lt;strong&gt;Java&lt;/strong&gt; và &lt;strong&gt;JavaScript&lt;/strong&gt; gần như là “cặp đôi quyền lực” nhưng cũng gây nhầm lẫn cho rất nhiều người mới học.&lt;br&gt;&#xA;Dù &lt;strong&gt;tên gần giống nhau&lt;/strong&gt;, nhưng hai ngôn ngữ này &lt;strong&gt;hoàn toàn khác biệt&lt;/strong&gt; về bản chất, vai trò và ứng dụng.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Khám Phá Sâu Về Java Và JavaScript Trong Thế Giới Lập Trình Hiện Đại</title>
+      <link>http://localhost:1313/Blog.github.io/posts/kham-pha-java-va-javascript/</link>
+      <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Blog.github.io/posts/kham-pha-java-va-javascript/</guid>
+      <description>&lt;h1 id=&#34;-giới-thiệu&#34; class=&#34;relative group&#34;&gt;🚀 Giới thiệu &lt;span class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100&#34;&gt;&lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34; style=&#34;text-decoration-line: none !important;&#34; href=&#34;#-gi%e1%bb%9bi-thi%e1%bb%87u&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;Trong thế giới lập trình không ngừng thay đổi, có hai cái tên mà gần như bất kỳ lập trình viên nào cũng từng nghe đến — &lt;strong&gt;Java&lt;/strong&gt; và &lt;strong&gt;JavaScript&lt;/strong&gt;.&lt;br&gt;&#xA;Dù tên gọi khiến nhiều người nhầm tưởng rằng chúng có liên quan mật thiết, nhưng thực tế &lt;strong&gt;Java&lt;/strong&gt; và &lt;strong&gt;JavaScript&lt;/strong&gt; lại là hai “thế giới” hoàn toàn khác nhau, được sinh ra với mục đích, cấu trúc và triết lý riêng biệt.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sức mạnh thực sự của Java và JavaScript trong thế giới hiện đại</title>
+      <link>http://localhost:1313/Blog.github.io/posts/suc-manh-java-javascript/</link>
+      <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Blog.github.io/posts/suc-manh-java-javascript/</guid>
+      <description>&lt;h1 id=&#34;-giới-thiệu&#34; class=&#34;relative group&#34;&gt;🌟 Giới thiệu &lt;span class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100&#34;&gt;&lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34; style=&#34;text-decoration-line: none !important;&#34; href=&#34;#-gi%e1%bb%9bi-thi%e1%bb%87u&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;Trong thời đại số hóa và trí tuệ nhân tạo phát triển mạnh mẽ, các ngôn ngữ lập trình trở thành “ngôn ngữ của thế giới hiện đại”.&lt;br&gt;&#xA;Giữa vô vàn cái tên, &lt;strong&gt;Java&lt;/strong&gt; và &lt;strong&gt;JavaScript&lt;/strong&gt; vẫn giữ vị thế trung tâm — xuất hiện trong gần như mọi hệ thống công nghệ từ quy mô nhỏ đến những nền tảng toàn cầu.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

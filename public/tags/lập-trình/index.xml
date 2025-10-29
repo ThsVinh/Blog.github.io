@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lập Trình on Trần Thái Vinh - Blog</title>
+    <link>http://localhost:1313/ThsVinh/Blog/tags/l%E1%BA%ADp-tr%C3%ACnh/</link>
+    <description>Recent content in Lập Trình on Trần Thái Vinh - Blog</description>
+    <generator>Hugo</generator>
+    <language>vi-vn</language>
+    <lastBuildDate>Mon, 20 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/ThsVinh/Blog/tags/l%E1%BA%ADp-tr%C3%ACnh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>So sánh lập trình Java và JavaScript: Tưởng giống mà khác xa</title>
+      <link>http://localhost:1313/ThsVinh/Blog/posts/java-vs-javascript/</link>
+      <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ThsVinh/Blog/posts/java-vs-javascript/</guid>
+      <description>&lt;h2 id=&#34;-giới-thiệu&#34; class=&#34;relative group&#34;&gt;🧠 Giới thiệu &lt;span class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100&#34;&gt;&lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34; style=&#34;text-decoration-line: none !important;&#34; href=&#34;#-gi%e1%bb%9bi-thi%e1%bb%87u&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Nhiều người mới học lập trình thường nghĩ rằng &lt;strong&gt;Java&lt;/strong&gt; và &lt;strong&gt;JavaScript&lt;/strong&gt; là một, vì chúng có tên khá giống nhau.&lt;br&gt;&#xA;Nhưng thực tế, hai ngôn ngữ này &lt;strong&gt;khác nhau hoàn toàn&lt;/strong&gt; — từ cú pháp, cách chạy, đến ứng dụng thực tế.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-java-là-gì&#34; class=&#34;relative group&#34;&gt;☕ Java là gì? &lt;span class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100&#34;&gt;&lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34; style=&#34;text-decoration-line: none !important;&#34; href=&#34;#-java-l%c3%a0-g%c3%ac&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Java&lt;/strong&gt; là ngôn ngữ lập trình hướng đối tượng, được phát triển bởi &lt;strong&gt;Sun Microsystems&lt;/strong&gt; (nay thuộc Oracle).&lt;br&gt;&#xA;Nó chạy trên &lt;strong&gt;JVM (Java Virtual Machine)&lt;/strong&gt; và có thể chạy trên nhiều nền tảng khác nhau.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

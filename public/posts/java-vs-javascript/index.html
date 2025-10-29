@@ -1,0 +1,646 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html
+  lang="vi-vn"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head><script src="/Blog.github.io/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=Blog.github.io/livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  
+  <title>Sự khác nhau giữa Java vs JavaScript &middot; Trần Thái Vinh - Blog</title>
+    <meta name="title" content="Sự khác nhau giữa Java vs JavaScript &middot; Trần Thái Vinh - Blog" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="http://localhost:1313/Blog.github.io/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
+  ></script>
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="http://localhost:1313/Blog.github.io/css/main.bundle.min.1c40e9d22cd4520ad332a355700e89f09c9b3124d97d414d76e6dde17e8d75ac.css"
+    integrity="sha256-HEDp0izUUgrTMqNVcA6J8JybMSTZfUFNdubd4X6Ndaw="
+  />
+  
+  
+  
+  
+  
+  
+  
+  <meta
+    name="description"
+    content="
+      Giải thích chi tiết sự khác biệt giữa Java và JavaScript, vai trò của từng ngôn ngữ trong lập trình web, và cách chúng phối hợp trong ứng dụng fullstack hiện đại.
+    "
+  />
+  
+  
+  
+  
+    <link rel="canonical" href="http://localhost:1313/Blog.github.io/posts/java-vs-javascript/" />
+  
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/Blog.github.io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/Blog.github.io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/Blog.github.io/favicon-16x16.png" />
+    <link rel="manifest" href="/Blog.github.io/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="http://localhost:1313/Blog.github.io/posts/java-vs-javascript/">
+  <meta property="og:site_name" content="Trần Thái Vinh - Blog">
+  <meta property="og:title" content="Sự khác nhau giữa Java vs JavaScript">
+  <meta property="og:description" content="Giải thích chi tiết sự khác biệt giữa Java và JavaScript, vai trò của từng ngôn ngữ trong lập trình web, và cách chúng phối hợp trong ứng dụng fullstack hiện đại.">
+  <meta property="og:locale" content="vi_vn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-20T17:14:15+07:00">
+    <meta property="article:modified_time" content="2025-10-20T17:14:15+07:00">
+    <meta property="article:tag" content="Java">
+    <meta property="article:tag" content="JavaScript">
+    <meta property="article:tag" content="Lập Trình Web">
+    <meta property="article:tag" content="Fullstack">
+    <meta property="article:tag" content="Spring Boot">
+    <meta property="article:tag" content="React">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sự khác nhau giữa Java vs JavaScript">
+  <meta name="twitter:description" content="Giải thích chi tiết sự khác biệt giữa Java và JavaScript, vai trò của từng ngôn ngữ trong lập trình web, và cách chúng phối hợp trong ứng dụng fullstack hiện đại.">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "Sự khác nhau giữa Java vs JavaScript",
+    "headline": "Sự khác nhau giữa Java vs JavaScript",
+    "description": "Giải thích chi tiết sự khác biệt giữa Java và JavaScript, vai trò của từng ngôn ngữ trong lập trình web, và cách chúng phối hợp trong ứng dụng fullstack hiện đại.",
+    "abstract": "\u003ch2 id=\u0022-giới-thiệu\u0022 class=\u0022relative group\u0022\u003e🧭 Giới thiệu \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#-gi%e1%bb%9bi-thi%e1%bb%87u\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h2\u003e\u003cp\u003eTrong thế giới lập trình web ngày nay, hai cái tên \u003cstrong\u003eJava\u003c\/strong\u003e và \u003cstrong\u003eJavaScript\u003c\/strong\u003e dường như luôn song hành với nhau.\u003cbr\u003e\nTuy nhiên, điểm thú vị là: \u003cstrong\u003echúng hoàn toàn khác nhau\u003c\/strong\u003e về nguồn gốc, cú pháp, cách hoạt động và cả mục đích sử dụng.\u003c\/p\u003e\n\u003cp\u003eViệc hiểu rõ \u003cstrong\u003esự khác biệt giữa Java và JavaScript\u003c\/strong\u003e không chỉ giúp lập trình viên lựa chọn công nghệ phù hợp mà còn giúp họ biết \u003cstrong\u003ecách kết hợp cả hai\u003c\/strong\u003e để tạo ra những ứng dụng \u003cstrong\u003eweb fullstack\u003c\/strong\u003e mạnh mẽ, hiện đại và dễ mở rộng.\u003c\/p\u003e",
+    "inLanguage": "vi-vn",
+    "url" : "http:\/\/localhost:1313\/Blog.github.io\/posts\/java-vs-javascript\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Trần Thái Vinh"
+    },
+    "copyrightYear": "2025",
+    "dateCreated": "2025-10-20T17:14:15\u002b07:00",
+    "datePublished": "2025-10-20T17:14:15\u002b07:00",
+    
+    "dateModified": "2025-10-20T17:14:15\u002b07:00",
+    
+    "keywords": ["Java","JavaScript","Lập trình web","Fullstack","Spring Boot","React"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1371"
+  }
+  </script>
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/Blog.github.io/",
+<<<<<<< HEAD
+       "name": "Blog Lập Trình Java Java Script",
+=======
+       "name": "Blog Lập Trình Java \u0026 Java Script",
+>>>>>>> 2d894ff19ad32d51a9d2dd0f0f258ea7b2f09e9a
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/Blog.github.io/posts/",
+       "name": "Posts",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/Blog.github.io/categories/l%E1%BA%ADp-tr%C3%ACnh/",
+       "name": "Lập Trình",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "Sự Khác Nhau Giữa Java vs Java Script",
+       "position": 4
+     }
+   ]
+ }
+  </script>
+
+  
+  
+    <meta name="author" content="Trần Thái Vinh" />
+  
+  
+  
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+</head>
+<body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >Skip to main content</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/Blog.github.io/"
+    >Trần Thái Vinh - Blog</a
+  >
+
+    </div>
+    
+    
+      <ul class="flex list-none flex-col text-end sm:flex-row">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/Blog.github.io/posts/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Posts</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/Blog.github.io/about/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >About</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+          
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+      <h1 class="mb-8 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        Sự khác nhau giữa Java vs JavaScript
+      </h1>
+      
+        <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2025-10-20 17:14:15 &#43;0700 &#43;07">October 20, 2025</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">7 mins</span>
+    
+
+    
+    
+  </div>
+
+  
+  
+
+
+        </div>
+      
+      
+    </header>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        <h2 id="-giới-thiệu" class="relative group">🧭 Giới thiệu <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-gi%e1%bb%9bi-thi%e1%bb%87u" aria-label="Anchor">#</a></span></h2><p>Trong thế giới lập trình web ngày nay, hai cái tên <strong>Java</strong> và <strong>JavaScript</strong> dường như luôn song hành với nhau.<br>
+Tuy nhiên, điểm thú vị là: <strong>chúng hoàn toàn khác nhau</strong> về nguồn gốc, cú pháp, cách hoạt động và cả mục đích sử dụng.</p>
+<p>Việc hiểu rõ <strong>sự khác biệt giữa Java và JavaScript</strong> không chỉ giúp lập trình viên lựa chọn công nghệ phù hợp mà còn giúp họ biết <strong>cách kết hợp cả hai</strong> để tạo ra những ứng dụng <strong>web fullstack</strong> mạnh mẽ, hiện đại và dễ mở rộng.</p>
+<hr>
+<h2 id="-phần-1-sự-khác-nhau-cơ-bản-giữa-java-và-javascript" class="relative group">⚙️ Phần 1: Sự khác nhau cơ bản giữa Java và JavaScript <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-ph%e1%ba%a7n-1-s%e1%bb%b1-kh%c3%a1c-nhau-c%c6%a1-b%e1%ba%a3n-gi%e1%bb%afa-java-v%c3%a0-javascript" aria-label="Anchor">#</a></span></h2><h3 id="-1-nguồn-gốc-và-triết-lý-thiết-kế" class="relative group">🏗️ 1. Nguồn gốc và triết lý thiết kế <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-1-ngu%e1%bb%93n-g%e1%bb%91c-v%c3%a0-tri%e1%ba%bft-l%c3%bd-thi%e1%ba%bft-k%e1%ba%bf" aria-label="Anchor">#</a></span></h3><ul>
+<li>
+<p><strong>Java</strong> ra đời năm 1995 bởi Sun Microsystems (nay thuộc Oracle), với mục tiêu “<strong>Write once, run anywhere</strong>” — viết một lần, chạy ở mọi nơi.<br>
+Java hướng đến các hệ thống lớn, ổn định, và có tính mở rộng cao. Nó hoạt động thông qua <strong>JVM (Java Virtual Machine)</strong> — một lớp trung gian giúp chương trình Java có thể chạy trên bất kỳ hệ điều hành nào.</p>
+</li>
+<li>
+<p><strong>JavaScript</strong> cũng được ra đời vào năm 1995 nhưng bởi <strong>Brendan Eich</strong> tại Netscape. Mục đích ban đầu là giúp <strong>trang web trở nên tương tác hơn</strong> — thêm hiệu ứng, kiểm tra form, xử lý sự kiện người dùng…<br>
+Sau này, nhờ sự phát triển của Node.js, JavaScript không chỉ giới hạn ở frontend mà còn có thể chạy ở backend, mở ra thời kỳ của <strong>Fullstack JavaScript</strong>.</p>
+</li>
+</ul>
+<hr>
+<h3 id="-2-so-sánh-chi-tiết" class="relative group">💡 2. So sánh chi tiết <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-2-so-s%c3%a1nh-chi-ti%e1%ba%bft" aria-label="Anchor">#</a></span></h3><table>
+  <thead>
+      <tr>
+          <th>Tiêu chí</th>
+          <th><strong>Java</strong></th>
+          <th><strong>JavaScript</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Loại ngôn ngữ</strong></td>
+          <td>Ngôn ngữ lập trình biên dịch, hướng đối tượng mạnh</td>
+          <td>Ngôn ngữ thông dịch, linh hoạt và động</td>
+      </tr>
+      <tr>
+          <td><strong>Môi trường chạy</strong></td>
+          <td>JVM (Java Virtual Machine)</td>
+          <td>Trình duyệt hoặc Node.js</td>
+      </tr>
+      <tr>
+          <td><strong>Ứng dụng chính</strong></td>
+          <td>Backend, Android, hệ thống doanh nghiệp, microservices</td>
+          <td>Frontend, tương tác UI, ứng dụng web hiện đại</td>
+      </tr>
+      <tr>
+          <td><strong>Kiểu dữ liệu</strong></td>
+          <td>Tĩnh (phải khai báo rõ ràng)</td>
+          <td>Động (tự xác định khi chạy)</td>
+      </tr>
+      <tr>
+          <td><strong>Tốc độ và hiệu suất</strong></td>
+          <td>Cao, nhờ biên dịch sang bytecode và tối ưu hóa bởi JVM</td>
+          <td>Phụ thuộc vào JavaScript Engine (V8, SpiderMonkey&hellip;)</td>
+      </tr>
+      <tr>
+          <td><strong>Thư viện &amp; Framework phổ biến</strong></td>
+          <td>Spring Boot, Hibernate, Jakarta EE</td>
+          <td>React, Vue, Angular, Express</td>
+      </tr>
+      <tr>
+          <td><strong>Độ phổ biến trong doanh nghiệp</strong></td>
+          <td>Rất cao, đặc biệt trong lĩnh vực ngân hàng, bảo hiểm, chính phủ</td>
+          <td>Rất cao trong các startup, công ty sản phẩm và nền tảng web</td>
+      </tr>
+  </tbody>
+</table>
+<p>👉 <strong>Kết luận:</strong></p>
+<ul>
+<li><strong>Java</strong>: Ổn định, mạnh mẽ, phù hợp cho hệ thống lớn, xử lý phức tạp ở backend.</li>
+<li><strong>JavaScript</strong>: Linh hoạt, dễ học, mạnh ở phần giao diện người dùng.</li>
+</ul>
+<p>Hai ngôn ngữ này <strong>bổ trợ lẫn nhau</strong> — Java đảm nhận phần “não bộ”, JavaScript đảm nhận phần “gương mặt” của ứng dụng.</p>
+<hr>
+<h2 id="-phần-2-vai-trò-của-java-và-javascript-trong-phát-triển-web" class="relative group">🌐 Phần 2: Vai trò của Java và JavaScript trong phát triển web <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-ph%e1%ba%a7n-2-vai-tr%c3%b2-c%e1%bb%a7a-java-v%c3%a0-javascript-trong-ph%c3%a1t-tri%e1%bb%83n-web" aria-label="Anchor">#</a></span></h2><h3 id="-1-java-ở-phía-backend" class="relative group">🧩 1. Java ở phía Backend <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-1-java-%e1%bb%9f-ph%c3%ada-backend" aria-label="Anchor">#</a></span></h3><p>Phía <strong>backend</strong> là nơi xử lý <strong>logic nghiệp vụ</strong>, <strong>lưu trữ dữ liệu</strong>, và <strong>đảm bảo an toàn</strong>.<br>
+Java, cùng với framework <strong>Spring Boot</strong>, là lựa chọn hàng đầu của nhiều doanh nghiệp lớn nhờ:</p>
+<ul>
+<li><strong>Bảo mật cao</strong> và hỗ trợ nhiều công nghệ bảo vệ API (JWT, OAuth2).</li>
+<li><strong>Hiệu suất ổn định</strong>, phù hợp với hàng triệu lượt truy cập mỗi ngày.</li>
+<li><strong>Hệ sinh thái phong phú</strong> với thư viện mạnh cho xử lý dữ liệu, kết nối cơ sở dữ liệu, quản lý session,&hellip;</li>
+</ul>
+<p>Ví dụ:<br>
+Khi bạn đăng nhập vào một website, dữ liệu tài khoản sẽ được gửi đến <strong>Java Backend</strong>.<br>
+Tại đây, Java xác thực thông tin, kiểm tra cơ sở dữ liệu, mã hóa mật khẩu, và trả kết quả về cho người dùng.</p>
+<p>Tất cả các thao tác đó gần như “vô hình” với người dùng — nhưng lại là “trái tim” của hệ thống web.</p>
+<hr>
+<h3 id="-2-javascript-ở-phía-frontend" class="relative group">🖥️ 2. JavaScript ở phía Frontend <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-2-javascript-%e1%bb%9f-ph%c3%ada-frontend" aria-label="Anchor">#</a></span></h3><p>Phía <strong>frontend</strong> là nơi người dùng trực tiếp tương tác — mọi thứ họ nhìn thấy và thao tác đều được điều khiển bằng <strong>JavaScript</strong>.</p>
+<p>Nhờ các thư viện như <strong>React</strong>, <strong>Vue</strong> hay <strong>Angular</strong>, JavaScript có thể:</p>
+<ul>
+<li>Hiển thị dữ liệu lấy từ backend.</li>
+<li>Tạo hiệu ứng, giao diện thân thiện.</li>
+<li>Cập nhật nội dung <strong>mà không cần tải lại trang</strong> (SPA — Single Page Application).</li>
+<li>Gửi yêu cầu đến backend thông qua <strong>Fetch API</strong> hoặc <strong>Axios</strong>.</li>
+</ul>
+<p>Ví dụ:<br>
+Khi bạn bấm nút “Hiển thị sản phẩm”, JavaScript sẽ gửi yêu cầu đến Java backend (qua API), lấy dữ liệu và hiển thị ngay lập tức lên giao diện mà không cần reload trang.</p>
+<hr>
+<h2 id="-phần-3-cách-java-và-javascript-giao-tiếp-với-nhau" class="relative group">🔗 Phần 3: Cách Java và JavaScript giao tiếp với nhau <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-ph%e1%ba%a7n-3-c%c3%a1ch-java-v%c3%a0-javascript-giao-ti%e1%ba%bfp-v%e1%bb%9bi-nhau" aria-label="Anchor">#</a></span></h2><p>Hai phần frontend và backend <strong>không trực tiếp biết nhau</strong> — chúng giao tiếp qua <strong>API (Application Programming Interface)</strong>.</p>
+<h3 id="-1-cách-hoạt-động" class="relative group">⚙️ 1. Cách hoạt động <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-1-c%c3%a1ch-ho%e1%ba%a1t-%c4%91%e1%bb%99ng" aria-label="Anchor">#</a></span></h3><ol>
+<li><strong>Frontend (JavaScript)</strong> gửi yêu cầu đến một đường dẫn API, ví dụ <code>/api/hello</code>.</li>
+<li><strong>Backend (Java)</strong> nhận yêu cầu, xử lý dữ liệu, rồi trả về kết quả (thường là JSON).</li>
+<li><strong>Frontend</strong> nhận dữ liệu và hiển thị lên giao diện.</li>
+</ol>
+<p>Dữ liệu trao đổi có thể rất đơn giản như một dòng chữ, hoặc phức tạp như danh sách sản phẩm, thông tin người dùng,&hellip;</p>
+<h3 id="-2-vấn-đề-cors" class="relative group">🔐 2. Vấn đề CORS <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-2-v%e1%ba%a5n-%c4%91%e1%bb%81-cors" aria-label="Anchor">#</a></span></h3><p>Khi frontend và backend chạy trên hai cổng khác nhau (ví dụ: React ở 3000, Spring Boot ở 8080), trình duyệt thường chặn yêu cầu vì lý do bảo mật (CORS).<br>
+Để khắc phục, Spring Boot cho phép cấu hình:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@CrossOrigin</span>(origins <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;http://localhost:3000&#34;</span>)
+</span></span></code></pre></div><p>Nhờ đó, frontend có thể truy cập dữ liệu từ backend an toàn mà không bị lỗi.</p>
+<hr>
+<h2 id="-phần-4-mô-hình-fullstack-java--javascript" class="relative group">🧰 Phần 4: Mô hình Fullstack Java + JavaScript <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-ph%e1%ba%a7n-4-m%c3%b4-h%c3%acnh-fullstack-java--javascript" aria-label="Anchor">#</a></span></h2><p>Khi kết hợp hai công nghệ này, ta có một <strong>kiến trúc web hiện đại</strong>:</p>
+<pre tabindex="0"><code>[ Người dùng ]
+     ↓
+[ Giao diện React / JavaScript ]
+     ↓
+(HTTP Request)
+[ Java Backend - Spring Boot ]
+     ↓
+[ Cơ sở dữ liệu MySQL / PostgreSQL ]
+</code></pre><h3 id="ưu-điểm" class="relative group">Ưu điểm: <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%c6%b0u-%c4%91i%e1%bb%83m" aria-label="Anchor">#</a></span></h3><ul>
+<li><strong>Tách biệt rõ frontend và backend</strong>, dễ mở rộng và bảo trì.</li>
+<li><strong>Dễ phát triển theo nhóm</strong>: một nhóm làm React, nhóm khác làm Spring Boot.</li>
+<li><strong>Hiệu suất cao</strong>, có thể triển khai độc lập từng phần.</li>
+</ul>
+<h3 id="nhược-điểm" class="relative group">Nhược điểm: <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#nh%c6%b0%e1%bb%a3c-%c4%91i%e1%bb%83m" aria-label="Anchor">#</a></span></h3><ul>
+<li>Cần hiểu cách frontend và backend trao đổi dữ liệu qua API.</li>
+<li>Phải xử lý các vấn đề như CORS, bảo mật, xác thực người dùng,&hellip;</li>
+</ul>
+<hr>
+<h2 id="-phần-5-khi-nào-nên-chọn-java-khi-nào-nên-chọn-javascript" class="relative group">🧠 Phần 5: Khi nào nên chọn Java? Khi nào nên chọn JavaScript? <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-ph%e1%ba%a7n-5-khi-n%c3%a0o-n%c3%aan-ch%e1%bb%8dn-java-khi-n%c3%a0o-n%c3%aan-ch%e1%bb%8dn-javascript" aria-label="Anchor">#</a></span></h2><table>
+  <thead>
+      <tr>
+          <th>Tình huống</th>
+          <th>Nên chọn Java</th>
+          <th>Nên chọn JavaScript</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Dự án lớn, yêu cầu ổn định, bảo mật</td>
+          <td>✅ Có</td>
+          <td>❌ Không khuyến khích</td>
+      </tr>
+      <tr>
+          <td>Web startup, MVP nhanh, linh hoạt</td>
+          <td>⚙️ Có thể kết hợp</td>
+          <td>✅ Rất phù hợp</td>
+      </tr>
+      <tr>
+          <td>Ứng dụng di động / Android</td>
+          <td>✅ Java (hoặc Kotlin)</td>
+          <td>⚙️ Chỉ dùng cho Hybrid app</td>
+      </tr>
+      <tr>
+          <td>Ứng dụng real-time (chat, socket)</td>
+          <td>⚙️ Có thể nhưng phức tạp</td>
+          <td>✅ Node.js rất mạnh</td>
+      </tr>
+      <tr>
+          <td>Hệ thống tài chính, ngân hàng</td>
+          <td>✅ Java là lựa chọn hàng đầu</td>
+          <td>❌ Không phù hợp</td>
+      </tr>
+  </tbody>
+</table>
+<p>👉 <strong>Tóm lại:</strong></p>
+<ul>
+<li>Dự án doanh nghiệp, backend lớn → chọn <strong>Java</strong>.</li>
+<li>Giao diện, tốc độ hiển thị, trải nghiệm người dùng → chọn <strong>JavaScript</strong>.</li>
+<li>Cần một sản phẩm web hoàn chỉnh → <strong>kết hợp cả hai</strong> là giải pháp tối ưu.</li>
+</ul>
+<hr>
+<h2 id="-kết-luận" class="relative group">📘 Kết luận <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#-k%e1%ba%bft-lu%e1%ba%adn" aria-label="Anchor">#</a></span></h2><p>Dù <strong>Java</strong> và <strong>JavaScript</strong> khác nhau về mọi mặt, nhưng <strong>chúng không đối lập</strong>, mà là <strong>hai mảnh ghép bổ sung hoàn hảo</strong> cho nhau trong lập trình web.</p>
+<ul>
+<li><strong>Java</strong> là “bộ não” của hệ thống — xử lý dữ liệu, logic, và bảo mật.</li>
+<li><strong>JavaScript</strong> là “giao diện” giúp người dùng tương tác dễ dàng và trực quan.</li>
+</ul>
+<p>Khi hiểu rõ cách hai ngôn ngữ này hoạt động, bạn không chỉ học được kỹ năng kỹ thuật mà còn hiểu <strong>tư duy lập trình đa tầng (multi-tier)</strong> — nền tảng của mọi ứng dụng web hiện đại.</p>
+<hr>
+<blockquote>
+<p>💡 <strong>Gợi ý mở rộng:</strong>
+Nếu bạn muốn tiến xa hơn, hãy thử tạo một dự án nhỏ:</p>
+<ul>
+<li>Backend bằng <strong>Spring Boot</strong> để cung cấp API.</li>
+<li>Frontend bằng <strong>React</strong> để hiển thị dữ liệu.</li>
+<li>Kết nối với cơ sở dữ liệu MySQL.</li>
+</ul>
+<p>Đây chính là bước đầu tiên để bạn trở thành <strong>lập trình viên fullstack thực thụ</strong>.</p></blockquote>
+<hr>
+<p>✍️ <em>Tác giả: Trần Thái Vinh</em>
+🖥️ <em>Blog học lập trình — Chia sẻ kiến thức về Java, JavaScript, và phát triển phần mềm hiện đại.</em></p>
+<pre tabindex="0"><code></code></pre>
+      </div>
+    </section>
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+  <div class="flex">
+    
+    
+    
+      
+      
+    
+    <div class="place-self-center">
+      
+        <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+          Author
+        </div>
+        <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+          Trần Thái Vinh
+        </div>
+      
+      
+      <div class="text-2xl sm:text-lg">
+</div>
+    </div>
+  </div>
+
+
+      
+
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="group flex" href="http://localhost:1313/Blog.github.io/posts/hanh-trinh-lam-chu-java-va-javascript/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Hành Trình Làm Chủ Java và JavaScript – Từ Backend đến Frontend</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-10-20 00:00:00 &#43;0000 UTC">October 20, 2025</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="group flex text-right" href="http://localhost:1313/Blog.github.io/posts/suc-manh-java-va-javascript/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Sức mạnh của Java và JavaScript trong phát triển phần mềm hiện đại </span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-10-21 00:00:00 &#43;0000 UTC">October 21, 2025</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[-2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&rarr;</span
+                ><span class="ltr:hidden rtl:inline">&larr;</span></span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+      </main>
+      
+        <div
+          class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12"
+          id="to-top"
+          hidden="true"
+        >
+          <a
+            href="#the-top"
+            class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+            aria-label="Scroll to top"
+            title="Scroll to top"
+          >
+            &uarr;
+          </a>
+        </div>
+      <footer class="py-10 print:hidden">
+  
+  
+  <div class="flex items-center justify-between">
+    <div>
+      
+      
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+            &copy;
+            2025
+            Trần Thái Vinh
+        </p>
+      
+      
+      
+        <p class="text-xs text-neutral-500 dark:text-neutral-400">
+          
+          
+          Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+            href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://github.com/jpanther/congo" target="_blank" rel="noopener noreferrer">Congo</a>
+        </p>
+      
+    </div>
+    <div class="flex flex-row items-center">
+      
+      
+      
+      
+    </div>
+  </div>
+  
+  
+</footer>
+
+    </div>
+  </body>
+</html>

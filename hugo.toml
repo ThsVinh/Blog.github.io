@@ -1,0 +1,42 @@
+<<<<<<< HEAD
+baseURL = "https://thsvinh.github.io/Blog.github.io/"
+=======
+<<<<<<< HEAD
+baseURL = "https://thsvinh.github.io/Blog.github.io/"
+=======
+baseURL = "https://ThsVinh.github.io/Blog.github.io/"
+>>>>>>> 17ee709efc6a14e8663dea51a185482f0bbb5e63
+>>>>>>> 2d894ff19ad32d51a9d2dd0f0f258ea7b2f09e9a
+languageCode = "vi-vn"
+title = "Trần Thái Vinh - Blog"
+theme = "congo"
+
+# Cấu hình giao diện (Đẹp tối giản, Dark Mode)
+[params]
+  defaultTheme = "dark" # Mặc định giao diện tối  
+  enableThemeToggle = true 
+  [params.main]
+    dateFormat = "02-01-2006" 
+
+# Cấu hình Menu (Home & Blog)
+[menu]
+<<<<<<< HEAD
+ 
+=======
+  
+>>>>>>> 2d894ff19ad32d51a9d2dd0f0f258ea7b2f09e9a
+  
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/" # Chứa danh sách 9 bài viết
+    weight = 20
+  
+  [[menu.main]]
+    identifier = "About"
+    name = "About"
+    url = "/about/" # Trang About cá nhân
+    weight = 30
+
+[markup.goldmark.renderer]
+unsafe = true

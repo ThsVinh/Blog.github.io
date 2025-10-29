@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Công Nghệ on Trần Thái Vinh - Blog</title>
+    <link>http://localhost:1313/Blog.github.io/categories/c%C3%B4ng-ngh%E1%BB%87/</link>
+    <description>Recent content in Công Nghệ on Trần Thái Vinh - Blog</description>
+    <generator>Hugo</generator>
+    <language>vi-vn</language>
+    <lastBuildDate>Mon, 20 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/Blog.github.io/categories/c%C3%B4ng-ngh%E1%BB%87/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hành Trình Làm Chủ Java và JavaScript – Từ Backend đến Frontend</title>
+      <link>http://localhost:1313/Blog.github.io/posts/hanh-trinh-lam-chu-java-va-javascript/</link>
+      <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Blog.github.io/posts/hanh-trinh-lam-chu-java-va-javascript/</guid>
+      <description>&lt;h1 id=&#34;-giới-thiệu&#34; class=&#34;relative group&#34;&gt;🌟 Giới thiệu &lt;span class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100&#34;&gt;&lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34; style=&#34;text-decoration-line: none !important;&#34; href=&#34;#-gi%e1%bb%9bi-thi%e1%bb%87u&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;Trong kỷ nguyên chuyển đổi số, lập trình viên không chỉ cần giỏi &lt;strong&gt;một ngôn ngữ&lt;/strong&gt;, mà cần có khả năng &lt;strong&gt;kết nối toàn bộ hệ thống&lt;/strong&gt; — từ phần xử lý logic phía máy chủ (backend) đến phần giao diện người dùng (frontend).&lt;/p&gt;&#xA;&lt;p&gt;Hai công nghệ nổi bật và bổ trợ cho nhau hoàn hảo trong lĩnh vực này chính là &lt;strong&gt;Java&lt;/strong&gt; và &lt;strong&gt;JavaScript&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sức mạnh thực sự của Java và JavaScript trong thế giới hiện đại</title>
+      <link>http://localhost:1313/Blog.github.io/posts/suc-manh-java-javascript/</link>
+      <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Blog.github.io/posts/suc-manh-java-javascript/</guid>
+      <description>&lt;h1 id=&#34;-giới-thiệu&#34; class=&#34;relative group&#34;&gt;🌟 Giới thiệu &lt;span class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100&#34;&gt;&lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34; style=&#34;text-decoration-line: none !important;&#34; href=&#34;#-gi%e1%bb%9bi-thi%e1%bb%87u&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;Trong thời đại số hóa và trí tuệ nhân tạo phát triển mạnh mẽ, các ngôn ngữ lập trình trở thành “ngôn ngữ của thế giới hiện đại”.&lt;br&gt;&#xA;Giữa vô vàn cái tên, &lt;strong&gt;Java&lt;/strong&gt; và &lt;strong&gt;JavaScript&lt;/strong&gt; vẫn giữ vị thế trung tâm — xuất hiện trong gần như mọi hệ thống công nghệ từ quy mô nhỏ đến những nền tảng toàn cầu.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tìm hiểu về Java và JavaScript – Hai thế giới song hành của lập trình hiện đại</title>
+      <link>http://localhost:1313/Blog.github.io/posts/java-javascript-article/</link>
+      <pubDate>Mon, 20 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Blog.github.io/posts/java-javascript-article/</guid>
+      <description>&lt;h1 id=&#34;-giới-thiệu&#34; class=&#34;relative group&#34;&gt;🌍 Giới thiệu &lt;span class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100&#34;&gt;&lt;a class=&#34;group-hover:text-primary-300 dark:group-hover:text-neutral-700&#34; style=&#34;text-decoration-line: none !important;&#34; href=&#34;#-gi%e1%bb%9bi-thi%e1%bb%87u&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;Trong thế giới công nghệ không ngừng phát triển, việc hiểu và sử dụng &lt;strong&gt;Java&lt;/strong&gt; cùng &lt;strong&gt;JavaScript&lt;/strong&gt; là chìa khóa giúp lập trình viên mở ra cánh cửa đến với sự nghiệp lập trình toàn diện.&lt;br&gt;&#xA;Dù tên gọi có vẻ giống nhau, nhưng hai ngôn ngữ này sinh ra với &lt;strong&gt;mục đích và triết lý rất khác biệt&lt;/strong&gt; – một bên là nền tảng vững chắc cho hệ thống doanh nghiệp, còn bên kia là linh hồn của web hiện đại.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
