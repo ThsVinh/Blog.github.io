@@ -12,11 +12,7 @@ theme = "congo"
 
 # Cấu hình Menu (Home & Blog)
 [menu]
-<<<<<<< HEAD
- 
-=======
-  
->>>>>>> 2d894ff19ad32d51a9d2dd0f0f258ea7b2f09e9a
+
   
   [[menu.main]]
     identifier = "posts"
