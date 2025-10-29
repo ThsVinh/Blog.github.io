@@ -1,12 +1,4 @@
-<<<<<<< HEAD
 baseURL = "https://thsvinh.github.io/Blog.github.io/"
-=======
-<<<<<<< HEAD
-baseURL = "https://thsvinh.github.io/Blog.github.io/"
-=======
-baseURL = "https://ThsVinh.github.io/Blog.github.io/"
->>>>>>> 17ee709efc6a14e8663dea51a185482f0bbb5e63
->>>>>>> 2d894ff19ad32d51a9d2dd0f0f258ea7b2f09e9a
 languageCode = "vi-vn"
 title = "Trần Thái Vinh - Blog"
 theme = "congo"
