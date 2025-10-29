@@ -1,10 +1,5 @@
 ---
-<<<<<<< HEAD
-title: "Blog Lập Trình Java - JavaScript"
-=======
-<<<<<<< HEAD
-title: "Blog Lập Trình Java & JavaScript"
-=======
+
 title: "Blog về Java & JavaScript"
 >>>>>>> 17ee709efc6a14e8663dea51a185482f0bbb5e63
 >>>>>>> 2d894ff19ad32d51a9d2dd0f0f258ea7b2f09e9a
