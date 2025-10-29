@@ -1,0 +1,943 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html
+  lang="vi-vn"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head><script src="/ThsVinh/Blog.github.io/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=ThsVinh/Blog.github.io/livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  
+  <title>JavaScript là gì? &middot; Trần Thái Vinh - Blog</title>
+    <meta name="title" content="JavaScript là gì? &middot; Trần Thái Vinh - Blog" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="http://localhost:1313/ThsVinh/Blog.github.io/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
+  ></script>
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="http://localhost:1313/ThsVinh/Blog.github.io/css/main.bundle.min.a287b55be30db9381c0341789580de110106fe65ace13a03f5a738bb97328822.css"
+    integrity="sha256-ooe1W&#43;MNuTgcA0F4lYDeEQEG/mWs4ToD9ac4u5cyiCI="
+  />
+  
+  
+  
+  
+  
+  
+  
+  <meta
+    name="description"
+    content="
+      
+        JavaScript là gì? #JavaScript (gọi tắt là JS) là ngôn ngữ lập trình chủ yếu dùng để tạo các trang web tương tác và ứng dụng phía client. Bắt đầu từ trình duyệt, JavaScript hiện đã phát triển mạnh mẽ và chạy ở nhiều môi trường khác nhau (ví dụ: Node.js cho server, Electron cho desktop, React Native cho mobile). JavaScript vừa dễ tiếp cận cho người mới, vừa có chiều sâu để xây dựng hệ thống phức tạp.
+      
+    "
+  />
+  
+  
+  
+  
+    <link rel="canonical" href="http://localhost:1313/ThsVinh/Blog.github.io/posts/javascript-la-gi/" />
+  
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/ThsVinh/Blog.github.io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/ThsVinh/Blog.github.io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/ThsVinh/Blog.github.io/favicon-16x16.png" />
+    <link rel="manifest" href="/ThsVinh/Blog.github.io/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="http://localhost:1313/ThsVinh/Blog.github.io/posts/javascript-la-gi/">
+  <meta property="og:site_name" content="Trần Thái Vinh - Blog">
+  <meta property="og:title" content="JavaScript là gì?">
+  <meta property="og:description" content="JavaScript là gì? #JavaScript (gọi tắt là JS) là ngôn ngữ lập trình chủ yếu dùng để tạo các trang web tương tác và ứng dụng phía client. Bắt đầu từ trình duyệt, JavaScript hiện đã phát triển mạnh mẽ và chạy ở nhiều môi trường khác nhau (ví dụ: Node.js cho server, Electron cho desktop, React Native cho mobile). JavaScript vừa dễ tiếp cận cho người mới, vừa có chiều sâu để xây dựng hệ thống phức tạp.">
+  <meta property="og:locale" content="vi_vn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-20T17:14:15+07:00">
+    <meta property="article:modified_time" content="2025-10-20T17:14:15+07:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="JavaScript là gì?">
+  <meta name="twitter:description" content="JavaScript là gì? #JavaScript (gọi tắt là JS) là ngôn ngữ lập trình chủ yếu dùng để tạo các trang web tương tác và ứng dụng phía client. Bắt đầu từ trình duyệt, JavaScript hiện đã phát triển mạnh mẽ và chạy ở nhiều môi trường khác nhau (ví dụ: Node.js cho server, Electron cho desktop, React Native cho mobile). JavaScript vừa dễ tiếp cận cho người mới, vừa có chiều sâu để xây dựng hệ thống phức tạp.">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "JavaScript là gì?",
+    "headline": "JavaScript là gì?",
+    
+    "abstract": "\u003ch1 id=\u0022javascript-là-gì\u0022 class=\u0022relative group\u0022\u003eJavaScript là gì? \u003cspan class=\u0022absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100\u0022\u003e\u003ca class=\u0022group-hover:text-primary-300 dark:group-hover:text-neutral-700\u0022 style=\u0022text-decoration-line: none !important;\u0022 href=\u0022#javascript-l%c3%a0-g%c3%ac\u0022 aria-label=\u0022Anchor\u0022\u003e#\u003c\/a\u003e\u003c\/span\u003e\u003c\/h1\u003e\u003cp\u003eJavaScript (gọi tắt là JS) là ngôn ngữ lập trình chủ yếu dùng để tạo các trang web tương tác và ứng dụng phía client. Bắt đầu từ trình duyệt, JavaScript hiện đã phát triển mạnh mẽ và chạy ở nhiều môi trường khác nhau (ví dụ: Node.js cho server, Electron cho desktop, React Native cho mobile). JavaScript vừa dễ tiếp cận cho người mới, vừa có chiều sâu để xây dựng hệ thống phức tạp.\u003c\/p\u003e",
+    "inLanguage": "vi-vn",
+    "url" : "http:\/\/localhost:1313\/ThsVinh\/Blog.github.io\/posts\/javascript-la-gi\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Trần Thái Vinh"
+    },
+    "copyrightYear": "2025",
+    "dateCreated": "2025-10-20T17:14:15\u002b07:00",
+    "datePublished": "2025-10-20T17:14:15\u002b07:00",
+    
+    "dateModified": "2025-10-20T17:14:15\u002b07:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "355"
+  }
+  </script>
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/ThsVinh/Blog.github.io/",
+       "name": "Blog Lập Trình — Trần Thái Vinh",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/ThsVinh/Blog.github.io/posts/",
+       "name": "Posts",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "name": "Java Script Là Gì?",
+       "position": 3
+     }
+   ]
+ }
+  </script>
+
+  
+  
+    <meta name="author" content="Trần Thái Vinh" />
+  
+  
+  
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+</head>
+<body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >Skip to main content</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/ThsVinh/Blog.github.io/"
+    >Trần Thái Vinh - Blog</a
+  >
+
+    </div>
+    
+    
+      <ul class="flex list-none flex-col text-end sm:flex-row">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/ThsVinh/Blog.github.io/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Home</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/ThsVinh/Blog.github.io/posts/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Posts</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/ThsVinh/Blog.github.io/about/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >About</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+          
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+      <h1 class="mb-8 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        JavaScript là gì?
+      </h1>
+      
+        <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2025-10-20 17:14:15 &#43;0700 &#43;07">October 20, 2025</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
+    
+
+    
+    
+  </div>
+
+  
+  
+
+
+        </div>
+      
+      
+    </header>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        <h1 id="javascript-là-gì" class="relative group">JavaScript là gì? <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#javascript-l%c3%a0-g%c3%ac" aria-label="Anchor">#</a></span></h1><p>JavaScript (gọi tắt là JS) là ngôn ngữ lập trình chủ yếu dùng để tạo các trang web tương tác và ứng dụng phía client. Bắt đầu từ trình duyệt, JavaScript hiện đã phát triển mạnh mẽ và chạy ở nhiều môi trường khác nhau (ví dụ: Node.js cho server, Electron cho desktop, React Native cho mobile). JavaScript vừa dễ tiếp cận cho người mới, vừa có chiều sâu để xây dựng hệ thống phức tạp.</p>
+<h2 id="mục-lục" class="relative group">Mục lục <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#m%e1%bb%a5c-l%e1%bb%a5c" aria-label="Anchor">#</a></span></h2><ul>
+<li>Tổng quan</li>
+<li>Lịch sử ngắn gọn</li>
+<li>JavaScript chạy ở đâu</li>
+<li>Cách thêm JavaScript vào HTML (kinh nghiệm &amp; ví dụ)</li>
+<li>Cú pháp cơ bản và khái niệm quan trọng</li>
+<li>DOM và xử lý sự kiện (với ví dụ chuẩn)</li>
+<li>Asynchronous: Callback, Promise, Async/Await</li>
+<li>Ví dụ thực tế (có thể copy chạy ngay)</li>
+<li>Công cụ và môi trường làm việc</li>
+<li>Best practices (cơ bản)</li>
+<li>Bảo mật và hiệu năng</li>
+<li>Roadmap học JavaScript</li>
+<li>Tài nguyên học tập</li>
+<li>Kết luận và hướng tiếp theo</li>
+</ul>
+<h2 id="tổng-quan" class="relative group">Tổng quan <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#t%e1%bb%95ng-quan" aria-label="Anchor">#</a></span></h2><ul>
+<li>Dễ học cho người mới: cú pháp tương đối trực quan, nhiều tài liệu.</li>
+<li>Hệ sinh thái rộng: framework và thư viện phong phú (React, Vue, Angular, Express…).</li>
+<li>Đa nền tảng: web, server, mobile, desktop, tooling.</li>
+<li>Cộng đồng lớn: nhiều package, plugin, tutorial, bài viết, video.</li>
+</ul>
+<h2 id="lịch-sử-ngắn-gọn" class="relative group">Lịch sử ngắn gọn <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#l%e1%bb%8bch-s%e1%bb%ad-ng%e1%ba%afn-g%e1%bb%8dn" aria-label="Anchor">#</a></span></h2><ul>
+<li>1995: Brendan Eich phát triển ngôn ngữ tại Netscape.</li>
+<li>ECMAScript là tiêu chuẩn mô tả JavaScript; ES6 (ES2015) là bước ngoặt lớn với nhiều tính năng hiện đại.</li>
+<li>Tên &ldquo;JavaScript&rdquo; mang tính marketing — không phải là Java.</li>
+</ul>
+<h2 id="javascript-chạy-ở-đâu" class="relative group">JavaScript chạy ở đâu? <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#javascript-ch%e1%ba%a1y-%e1%bb%9f-%c4%91%c3%a2u" aria-label="Anchor">#</a></span></h2><ol>
+<li>Trình duyệt (Browser)
+<ul>
+<li>Thao tác DOM, xử lý sự kiện, giao tiếp mạng (fetch, XMLHttpRequest).</li>
+</ul>
+</li>
+<li>Server (Node.js)
+<ul>
+<li>Xây dựng API, xử lý I/O, server-side rendering, tooling (build tools).</li>
+</ul>
+</li>
+<li>Mobile
+<ul>
+<li>Frameworks: React Native, Ionic, NativeScript.</li>
+</ul>
+</li>
+<li>Desktop
+<ul>
+<li>Electron, Tauri (JS + native).</li>
+</ul>
+</li>
+<li>Các môi trường khác
+<ul>
+<li>Embedded (ví dụ: IoT), scripting cho công cụ/IDE.</li>
+</ul>
+</li>
+</ol>
+<h2 id="cách-thêm-javascript-vào-html" class="relative group">Cách thêm JavaScript vào HTML <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#c%c3%a1ch-th%c3%aam-javascript-v%c3%a0o-html" aria-label="Anchor">#</a></span></h2><p>Có 3 cách chính — ưu tiên external script cho dự án thực tế.</p>
+<ol>
+<li>Inline (trực tiếp trên thẻ)</li>
+</ol>
+<ul>
+<li>Dùng cho ví dụ nhanh, không khuyến nghị trong sản phẩm vì khó bảo trì.
+<button onclick="alert('Bạn đã click!')">Click me</button></li>
+</ul>
+<ol start="2">
+<li>Internal (thẻ <script> trong HTML)</li>
+</ol>
+<ul>
+<li>Dùng cho demo hoặc trang rất nhỏ.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!doctype html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;&lt;<span style="color:#f92672">title</span>&gt;Internal JS&lt;/<span style="color:#f92672">title</span>&gt;&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">h1</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;title&#34;</span>&gt;Tiêu đề&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>    document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;title&#39;</span>).<span style="color:#a6e22e">innerText</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;JavaScript đang hoạt động!&#39;</span>;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><ol start="3">
+<li>External (khuyến nghị)</li>
+</ol>
+<ul>
+<li>Tách code ra file .js, dễ quản lý, cache, test.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- index.html --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;script.js&#34;</span> <span style="color:#a6e22e">defer</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// script.js
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;External JS loaded&#39;</span>);
+</span></span></code></pre></div><p>Gợi ý: dùng &ldquo;defer&rdquo; hoặc &ldquo;module&rdquo; để tránh blocking render.</p>
+<h2 id="cú-pháp-cơ-bản-và-khái-niệm" class="relative group">Cú pháp cơ bản và khái niệm <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#c%c3%ba-ph%c3%a1p-c%c6%a1-b%e1%ba%a3n-v%c3%a0-kh%c3%a1i-ni%e1%bb%87m" aria-label="Anchor">#</a></span></h2><ul>
+<li>Khai báo biến: const (khuyến nghị cho hằng), let (biến thay đổi), tránh var.</li>
+<li>Kiểu dữ liệu: Number, String, Boolean, Null, Undefined, Symbol, Object.</li>
+<li>Toán tử: + - * / %, **, == vs ===, &amp;&amp;, ||, !</li>
+<li>Cấu trúc điều khiển: if/else, switch, for, while, for&hellip;of, for&hellip;in.</li>
+<li>Hàm: declaration, expression, arrow functions.</li>
+<li>Template literal: <code>Xin chào ${name}</code></li>
+<li>Modules: import / export (ES modules).</li>
+</ul>
+<p>Ví dụ ngắn:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">PI</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.14</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">count</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">add</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>) =&gt; <span style="color:#a6e22e">a</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">b</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Kết quả: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">add</span>(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span></code></pre></div><h2 id="dom-và-xử-lý-sự-kiện" class="relative group">DOM và xử lý sự kiện <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#dom-v%c3%a0-x%e1%bb%ad-l%c3%bd-s%e1%bb%b1-ki%e1%bb%87n" aria-label="Anchor">#</a></span></h2><ul>
+<li>DOM (Document Object Model) là cây biểu diễn cấu trúc HTML; JS thao tác DOM để thay đổi nội dung, style, cấu trúc.</li>
+<li>Tránh sử dụng document.write() trong code sản xuất.</li>
+<li>Sử dụng addEventListener để gắn event — tách logic khỏi markup.</li>
+</ul>
+<p>Ví dụ chuẩn (khuyến nghị) — thay đổi nội dung &amp; style:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!doctype html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;&lt;<span style="color:#f92672">title</span>&gt;Demo DOM&lt;/<span style="color:#f92672">title</span>&gt;&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">h1</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myHeading&#34;</span>&gt;Tiêu đề gốc&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn&#34;</span>&gt;Thay đổi&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>    document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;btn&#39;</span>).<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">h</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;myHeading&#39;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">h</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Tiêu đề mới!&#39;</span>;
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">h</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">color</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;blue&#39;</span>;
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">h</span>.<span style="color:#a6e22e">classList</span>.<span style="color:#a6e22e">toggle</span>(<span style="color:#e6db74">&#39;changed&#39;</span>);
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><h2 id="asynchronous-callback-promise-asyncawait" class="relative group">Asynchronous: Callback, Promise, Async/Await <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#asynchronous-callback-promise-asyncawait" aria-label="Anchor">#</a></span></h2><ul>
+<li>JavaScript là single-thread nhưng hỗ trợ async I/O.</li>
+<li>Callback: cơ bản nhưng dễ gây callback-hell.</li>
+<li>Promise: giải quyết callback hell, có then/catch/finally.</li>
+<li>Async/Await: cú pháp đồng bộ hóa cho Promises, dễ đọc.</li>
+</ul>
+<p>Ví dụ fetch với async/await:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fetchItems</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">res</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#e6db74">&#39;https://api.example.com/items&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">ok</span>) <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#39;Network response was not ok&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">data</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">json</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">table</span>(<span style="color:#a6e22e">data</span>);
+</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">err</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">&#39;Fetch error:&#39;</span>, <span style="color:#a6e22e">err</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fetchItems</span>();
+</span></span></code></pre></div><h2 id="ví-dụ-thực-tế-có-thể-copy--chạy" class="relative group">Ví dụ thực tế có thể copy &amp; chạy <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#v%c3%ad-d%e1%bb%a5-th%e1%bb%b1c-t%e1%ba%bf-c%c3%b3-th%e1%bb%83-copy--ch%e1%ba%a1y" aria-label="Anchor">#</a></span></h2><ol>
+<li>Index + External script (ứng dụng nhỏ: tính tổng)</li>
+</ol>
+<ul>
+<li>index.html</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!doctype html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">title</span>&gt;Máy tính đơn giản&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">h2</span>&gt;Máy tính đơn giản&lt;/<span style="color:#f92672">h2</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;number&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;num1&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Số thứ nhất&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;number&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;num2&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Số thứ hai&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;calc&#34;</span>&gt;Tính tổng&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;result&#34;</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;calc.js&#34;</span> <span style="color:#a6e22e">defer</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><ul>
+<li>calc.js</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;calc&#39;</span>).<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> parseFloat(document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;num1&#39;</span>).<span style="color:#a6e22e">value</span>) <span style="color:#f92672">||</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> parseFloat(document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;num2&#39;</span>).<span style="color:#a6e22e">value</span>) <span style="color:#f92672">||</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;result&#39;</span>).<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`Kết quả: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">a</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">b</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><ol start="2">
+<li>Node.js nhanh:</li>
+</ol>
+<ul>
+<li>hello.js</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Hello from Node.js!&#39;</span>);
+</span></span></code></pre></div><p>Chạy: node hello.js</p>
+<h2 id="công-cụ-và-môi-trường-làm-việc" class="relative group">Công cụ và môi trường làm việc <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#c%c3%b4ng-c%e1%bb%a5-v%c3%a0-m%c3%b4i-tr%c6%b0%e1%bb%9dng-l%c3%a0m-vi%e1%bb%87c" aria-label="Anchor">#</a></span></h2><ul>
+<li>Editor: Visual Studio Code (khuyên dùng), WebStorm, Sublime.</li>
+<li>Trình duyệt: Chrome (DevTools), Firefox Developer.</li>
+<li>Extension VS Code gợi ý: Live Server, Prettier, ESLint, Debugger for Chrome.</li>
+<li>Package managers: npm, yarn, pnpm.</li>
+<li>Bundlers/Dev tools: Vite (nhanh), webpack, Rollup.</li>
+<li>Test: Jest (unit), Mocha/Chai, Cypress (E2E).</li>
+</ul>
+<h2 id="best-practices-cơ-bản" class="relative group">Best practices (cơ bản) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#best-practices-c%c6%a1-b%e1%ba%a3n" aria-label="Anchor">#</a></span></h2><ul>
+<li>Dùng const/let thay vì var.</li>
+<li>Tách code thành modules, functions nhỏ, dễ test.</li>
+<li>Tránh thao tác DOM không cần thiết — batch updates hoặc Virtual DOM.</li>
+<li>Xử lý lỗi rõ ràng (try/catch), validate input.</li>
+<li>Sử dụng linter và formatter (ESLint + Prettier).</li>
+<li>Viết test cho logic quan trọng.</li>
+<li>Dùng feature detection và progressive enhancement cho web.</li>
+</ul>
+<h2 id="bảo-mật--hiệu-năng" class="relative group">Bảo mật &amp; hiệu năng <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#b%e1%ba%a3o-m%e1%ba%adt--hi%e1%bb%87u-n%c4%83ng" aria-label="Anchor">#</a></span></h2><ul>
+<li>XSS: luôn escape dữ liệu không tin cậy trước khi chèn vào DOM. Tránh innerHTML nếu không cần.</li>
+<li>CSRF: bảo vệ endpoint phía server.</li>
+<li>Performance: giảm reflow/repaint, debounce/throttle cho sự kiện tần suất cao, tối ưu mạng (lazy load).</li>
+<li>Dependency: kiểm tra package trước khi dùng, cập nhật phụ thuộc định kỳ.</li>
+</ul>
+<h2 id="roadmap-học-javascript-gợi-ý-chi-tiết" class="relative group">Roadmap học JavaScript (gợi ý chi tiết) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#roadmap-h%e1%bb%8dc-javascript-g%e1%bb%a3i-%c3%bd-chi-ti%e1%ba%bft" aria-label="Anchor">#</a></span></h2><ol>
+<li>Cơ bản: syntax, biến, kiểu dữ liệu.</li>
+<li>Control flow, mảng, object.</li>
+<li>Hàm, scope, closure.</li>
+<li>DOM, events.</li>
+<li>ES6+: let/const, arrow, classes, modules, destructuring.</li>
+<li>Asynchronous: callbacks → promises → async/await.</li>
+<li>HTTP: fetch, axios.</li>
+<li>Tooling: npm, bundlers, babel, linters.</li>
+<li>Framework/library: chọn 1 (React/Vue/Angular).</li>
+<li>Backend: Node.js + Express.</li>
+<li>Testing, CI/CD, deploy.</li>
+</ol>
+<h2 id="tài-nguyên-học-tập" class="relative group">Tài nguyên học tập <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#t%c3%a0i-nguy%c3%aan-h%e1%bb%8dc-t%e1%ba%adp" aria-label="Anchor">#</a></span></h2><ul>
+<li>MDN Web Docs — tài liệu chính thống và đầy đủ.</li>
+<li>JavaScript.info — hướng dẫn chi tiết, ví dụ.</li>
+<li>FreeCodeCamp — bài tập thực hành.</li>
+<li>Sách: &ldquo;You Don&rsquo;t Know JS&rdquo; (series) — tốt để hiểu sâu.</li>
+<li>Khóa học: Udemy, Coursera, Frontend Masters.</li>
+<li>GitHub — đọc mã nguồn dự án thực tế.</li>
+</ul>
+<h2 id="gợi-ý-cấu-trúc-bài-cho-blog-seo--ux" class="relative group">Gợi ý cấu trúc bài cho blog (SEO &amp; UX) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#g%e1%bb%a3i-%c3%bd-c%e1%ba%a5u-tr%c3%bac-b%c3%a0i-cho-blog-seo--ux" aria-label="Anchor">#</a></span></h2><ul>
+<li>Tiêu đề rõ ràng, meta description ngắn gọn.</li>
+<li>Mục lục ở đầu bài cho bài dài.</li>
+<li>Code snippets có thể copy/run.</li>
+<li>Các phần &ldquo;Bạn sẽ học được&rdquo; và &ldquo;Bắt đầu nhanh (5 phút)&rdquo;.</li>
+</ul>
+<h2 id="kết-luận" class="relative group">Kết luận <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#k%e1%ba%bft-lu%e1%ba%adn" aria-label="Anchor">#</a></span></h2><p>JavaScript là ngôn ngữ cốt lõi của phát triển web hiện đại: dễ bắt đầu, đa năng và có hệ sinh thái đồ sộ. Hãy bắt đầu từ cơ bản, thực hành qua ví dụ nhỏ, sau đó mở rộng sang ES6, asynchronous, và một framework bạn chọn. Tiếp theo bạn có thể đọc bài viết chi tiết về &ldquo;Biến, kiểu dữ liệu và toán tử trong JavaScript&rdquo; — bài này sẽ là nền tảng tốt để tiếp tục.</p>
+<h2 id="gợi-ý-bài-tiếp-theo-để-viết-cho-blog" class="relative group">Gợi ý bài tiếp theo để viết cho blog <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#g%e1%bb%a3i-%c3%bd-b%c3%a0i-ti%e1%ba%bfp-theo-%c4%91%e1%bb%83-vi%e1%ba%bft-cho-blog" aria-label="Anchor">#</a></span></h2><ul>
+<li>Biến &amp; kiểu dữ liệu trong JavaScript (chi tiết + ví dụ)</li>
+<li>Hàm, scope và closure (để tránh lỗi phổ biến)</li>
+<li>Promises và async/await (với ví dụ fetch API)</li>
+<li>So sánh React vs Vue (khi học framework)</li>
+<li>Bảo mật front-end cơ bản (XSS, CSP, sanitize input)</li>
+</ul>
+<pre tabindex="0"><code>// ...existing code...
+```// filepath: d:\vinhblog\content\posts\javascript-la-gi.md
+// ...existing code...
++++
+date = &#39;2025-10-20T17:14:15+07:00&#39;
+draft = false
+title = &#39;JavaScript là gì?&#39;
++++
+
+JavaScript là gì?
+==================
+
+JavaScript (gọi tắt là JS) là ngôn ngữ lập trình chủ yếu dùng để tạo các trang web tương tác và ứng dụng phía client. Bắt đầu từ trình duyệt, JavaScript hiện đã phát triển mạnh mẽ và chạy ở nhiều môi trường khác nhau (ví dụ: Node.js cho server, Electron cho desktop, React Native cho mobile). JavaScript vừa dễ tiếp cận cho người mới, vừa có chiều sâu để xây dựng hệ thống phức tạp.
+
+Mục lục
+-------
+- Tổng quan
+- Lịch sử ngắn gọn
+- JavaScript chạy ở đâu
+- Cách thêm JavaScript vào HTML (kinh nghiệm &amp; ví dụ)
+- Cú pháp cơ bản và khái niệm quan trọng
+- DOM và xử lý sự kiện (với ví dụ chuẩn)
+- Asynchronous: Callback, Promise, Async/Await
+- Ví dụ thực tế (có thể copy chạy ngay)
+- Công cụ và môi trường làm việc
+- Best practices (cơ bản)
+- Bảo mật và hiệu năng
+- Roadmap học JavaScript
+- Tài nguyên học tập
+- Kết luận và hướng tiếp theo
+
+Tổng quan
+---------
+- Dễ học cho người mới: cú pháp tương đối trực quan, nhiều tài liệu.
+- Hệ sinh thái rộng: framework và thư viện phong phú (React, Vue, Angular, Express…).
+- Đa nền tảng: web, server, mobile, desktop, tooling.
+- Cộng đồng lớn: nhiều package, plugin, tutorial, bài viết, video.
+
+Lịch sử ngắn gọn
+----------------
+- 1995: Brendan Eich phát triển ngôn ngữ tại Netscape.
+- ECMAScript là tiêu chuẩn mô tả JavaScript; ES6 (ES2015) là bước ngoặt lớn với nhiều tính năng hiện đại.
+- Tên &#34;JavaScript&#34; mang tính marketing — không phải là Java.
+
+JavaScript chạy ở đâu?
+----------------------
+1. Trình duyệt (Browser)
+   - Thao tác DOM, xử lý sự kiện, giao tiếp mạng (fetch, XMLHttpRequest).
+2. Server (Node.js)
+   - Xây dựng API, xử lý I/O, server-side rendering, tooling (build tools).
+3. Mobile
+   - Frameworks: React Native, Ionic, NativeScript.
+4. Desktop
+   - Electron, Tauri (JS + native).
+5. Các môi trường khác
+   - Embedded (ví dụ: IoT), scripting cho công cụ/IDE.
+
+Cách thêm JavaScript vào HTML
+-----------------------------
+Có 3 cách chính — ưu tiên external script cho dự án thực tế.
+
+1) Inline (trực tiếp trên thẻ)
+- Dùng cho ví dụ nhanh, không khuyến nghị trong sản phẩm vì khó bảo trì.
+&lt;button onclick=&#34;alert(&#39;Bạn đã click!&#39;)&#34;&gt;Click me&lt;/button&gt;
+
+2) Internal (thẻ &lt;script&gt; trong HTML)
+- Dùng cho demo hoặc trang rất nhỏ.
+```html
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;&lt;meta charset=&#34;utf-8&#34;&gt;&lt;title&gt;Internal JS&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1 id=&#34;title&#34;&gt;Tiêu đề&lt;/h1&gt;
+  &lt;script&gt;
+    document.getElementById(&#39;title&#39;).innerText = &#39;JavaScript đang hoạt động!&#39;;
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><ol start="3">
+<li>External (khuyến nghị)</li>
+</ol>
+<ul>
+<li>Tách code ra file .js, dễ quản lý, cache, test.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- index.html --&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;script.js&#34;</span> <span style="color:#a6e22e">defer</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// script.js
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;External JS loaded&#39;</span>);
+</span></span></code></pre></div><p>Gợi ý: dùng &ldquo;defer&rdquo; hoặc &ldquo;module&rdquo; để tránh blocking render.</p>
+<h2 id="cú-pháp-cơ-bản-và-khái-niệm-1" class="relative group">Cú pháp cơ bản và khái niệm <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#c%c3%ba-ph%c3%a1p-c%c6%a1-b%e1%ba%a3n-v%c3%a0-kh%c3%a1i-ni%e1%bb%87m-1" aria-label="Anchor">#</a></span></h2><ul>
+<li>Khai báo biến: const (khuyến nghị cho hằng), let (biến thay đổi), tránh var.</li>
+<li>Kiểu dữ liệu: Number, String, Boolean, Null, Undefined, Symbol, Object.</li>
+<li>Toán tử: + - * / %, **, == vs ===, &amp;&amp;, ||, !</li>
+<li>Cấu trúc điều khiển: if/else, switch, for, while, for&hellip;of, for&hellip;in.</li>
+<li>Hàm: declaration, expression, arrow functions.</li>
+<li>Template literal: <code>Xin chào ${name}</code></li>
+<li>Modules: import / export (ES modules).</li>
+</ul>
+<p>Ví dụ ngắn:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">PI</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.14</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">count</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">add</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>) =&gt; <span style="color:#a6e22e">a</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">b</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Kết quả: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">add</span>(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span></code></pre></div><h2 id="dom-và-xử-lý-sự-kiện-1" class="relative group">DOM và xử lý sự kiện <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#dom-v%c3%a0-x%e1%bb%ad-l%c3%bd-s%e1%bb%b1-ki%e1%bb%87n-1" aria-label="Anchor">#</a></span></h2><ul>
+<li>DOM (Document Object Model) là cây biểu diễn cấu trúc HTML; JS thao tác DOM để thay đổi nội dung, style, cấu trúc.</li>
+<li>Tránh sử dụng document.write() trong code sản xuất.</li>
+<li>Sử dụng addEventListener để gắn event — tách logic khỏi markup.</li>
+</ul>
+<p>Ví dụ chuẩn (khuyến nghị) — thay đổi nội dung &amp; style:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!doctype html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;&lt;<span style="color:#f92672">title</span>&gt;Demo DOM&lt;/<span style="color:#f92672">title</span>&gt;&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">h1</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;myHeading&#34;</span>&gt;Tiêu đề gốc&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn&#34;</span>&gt;Thay đổi&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>    document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;btn&#39;</span>).<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">h</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;myHeading&#39;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">h</span>.<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Tiêu đề mới!&#39;</span>;
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">h</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">color</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;blue&#39;</span>;
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">h</span>.<span style="color:#a6e22e">classList</span>.<span style="color:#a6e22e">toggle</span>(<span style="color:#e6db74">&#39;changed&#39;</span>);
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><h2 id="asynchronous-callback-promise-asyncawait-1" class="relative group">Asynchronous: Callback, Promise, Async/Await <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#asynchronous-callback-promise-asyncawait-1" aria-label="Anchor">#</a></span></h2><ul>
+<li>JavaScript là single-thread nhưng hỗ trợ async I/O.</li>
+<li>Callback: cơ bản nhưng dễ gây callback-hell.</li>
+<li>Promise: giải quyết callback hell, có then/catch/finally.</li>
+<li>Async/Await: cú pháp đồng bộ hóa cho Promises, dễ đọc.</li>
+</ul>
+<p>Ví dụ fetch với async/await:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">fetchItems</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">res</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#e6db74">&#39;https://api.example.com/items&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">ok</span>) <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> Error(<span style="color:#e6db74">&#39;Network response was not ok&#39;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">data</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">json</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">table</span>(<span style="color:#a6e22e">data</span>);
+</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">catch</span> (<span style="color:#a6e22e">err</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">&#39;Fetch error:&#39;</span>, <span style="color:#a6e22e">err</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">fetchItems</span>();
+</span></span></code></pre></div><h2 id="ví-dụ-thực-tế-có-thể-copy--chạy-1" class="relative group">Ví dụ thực tế có thể copy &amp; chạy <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#v%c3%ad-d%e1%bb%a5-th%e1%bb%b1c-t%e1%ba%bf-c%c3%b3-th%e1%bb%83-copy--ch%e1%ba%a1y-1" aria-label="Anchor">#</a></span></h2><ol>
+<li>Index + External script (ứng dụng nhỏ: tính tổng)</li>
+</ol>
+<ul>
+<li>index.html</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!doctype html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">title</span>&gt;Máy tính đơn giản&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">h2</span>&gt;Máy tính đơn giản&lt;/<span style="color:#f92672">h2</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;number&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;num1&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Số thứ nhất&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;number&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;num2&#34;</span> <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Số thứ hai&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;calc&#34;</span>&gt;Tính tổng&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;result&#34;</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;calc.js&#34;</span> <span style="color:#a6e22e">defer</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><ul>
+<li>calc.js</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;calc&#39;</span>).<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> parseFloat(document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;num1&#39;</span>).<span style="color:#a6e22e">value</span>) <span style="color:#f92672">||</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> parseFloat(document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;num2&#39;</span>).<span style="color:#a6e22e">value</span>) <span style="color:#f92672">||</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;result&#39;</span>).<span style="color:#a6e22e">textContent</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`Kết quả: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">a</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">b</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><ol start="2">
+<li>Node.js nhanh:</li>
+</ol>
+<ul>
+<li>hello.js</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Hello from Node.js!&#39;</span>);
+</span></span></code></pre></div><p>Chạy: node hello.js</p>
+<h2 id="công-cụ-và-môi-trường-làm-việc-1" class="relative group">Công cụ và môi trường làm việc <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#c%c3%b4ng-c%e1%bb%a5-v%c3%a0-m%c3%b4i-tr%c6%b0%e1%bb%9dng-l%c3%a0m-vi%e1%bb%87c-1" aria-label="Anchor">#</a></span></h2><ul>
+<li>Editor: Visual Studio Code (khuyên dùng), WebStorm, Sublime.</li>
+<li>Trình duyệt: Chrome (DevTools), Firefox Developer.</li>
+<li>Extension VS Code gợi ý: Live Server, Prettier, ESLint, Debugger for Chrome.</li>
+<li>Package managers: npm, yarn, pnpm.</li>
+<li>Bundlers/Dev tools: Vite (nhanh), webpack, Rollup.</li>
+<li>Test: Jest (unit), Mocha/Chai, Cypress (E2E).</li>
+</ul>
+<h2 id="best-practices-cơ-bản-1" class="relative group">Best practices (cơ bản) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#best-practices-c%c6%a1-b%e1%ba%a3n-1" aria-label="Anchor">#</a></span></h2><ul>
+<li>Dùng const/let thay vì var.</li>
+<li>Tách code thành modules, functions nhỏ, dễ test.</li>
+<li>Tránh thao tác DOM không cần thiết — batch updates hoặc Virtual DOM.</li>
+<li>Xử lý lỗi rõ ràng (try/catch), validate input.</li>
+<li>Sử dụng linter và formatter (ESLint + Prettier).</li>
+<li>Viết test cho logic quan trọng.</li>
+<li>Dùng feature detection và progressive enhancement cho web.</li>
+</ul>
+<h2 id="bảo-mật--hiệu-năng-1" class="relative group">Bảo mật &amp; hiệu năng <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#b%e1%ba%a3o-m%e1%ba%adt--hi%e1%bb%87u-n%c4%83ng-1" aria-label="Anchor">#</a></span></h2><ul>
+<li>XSS: luôn escape dữ liệu không tin cậy trước khi chèn vào DOM. Tránh innerHTML nếu không cần.</li>
+<li>CSRF: bảo vệ endpoint phía server.</li>
+<li>Performance: giảm reflow/repaint, debounce/throttle cho sự kiện tần suất cao, tối ưu mạng (lazy load).</li>
+<li>Dependency: kiểm tra package trước khi dùng, cập nhật phụ thuộc định kỳ.</li>
+</ul>
+<h2 id="roadmap-học-javascript-gợi-ý-chi-tiết-1" class="relative group">Roadmap học JavaScript (gợi ý chi tiết) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#roadmap-h%e1%bb%8dc-javascript-g%e1%bb%a3i-%c3%bd-chi-ti%e1%ba%bft-1" aria-label="Anchor">#</a></span></h2><ol>
+<li>Cơ bản: syntax, biến, kiểu dữ liệu.</li>
+<li>Control flow, mảng, object.</li>
+<li>Hàm, scope, closure.</li>
+<li>DOM, events.</li>
+<li>ES6+: let/const, arrow, classes, modules, destructuring.</li>
+<li>Asynchronous: callbacks → promises → async/await.</li>
+<li>HTTP: fetch, axios.</li>
+<li>Tooling: npm, bundlers, babel, linters.</li>
+<li>Framework/library: chọn 1 (React/Vue/Angular).</li>
+<li>Backend: Node.js + Express.</li>
+<li>Testing, CI/CD, deploy.</li>
+</ol>
+<h2 id="tài-nguyên-học-tập-1" class="relative group">Tài nguyên học tập <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#t%c3%a0i-nguy%c3%aan-h%e1%bb%8dc-t%e1%ba%adp-1" aria-label="Anchor">#</a></span></h2><ul>
+<li>MDN Web Docs — tài liệu chính thống và đầy đủ.</li>
+<li>JavaScript.info — hướng dẫn chi tiết, ví dụ.</li>
+<li>FreeCodeCamp — bài tập thực hành.</li>
+<li>Sách: &ldquo;You Don&rsquo;t Know JS&rdquo; (series) — tốt để hiểu sâu.</li>
+<li>Khóa học: Udemy, Coursera, Frontend Masters.</li>
+<li>GitHub — đọc mã nguồn dự án thực tế.</li>
+</ul>
+<h2 id="gợi-ý-cấu-trúc-bài-cho-blog-seo--ux-1" class="relative group">Gợi ý cấu trúc bài cho blog (SEO &amp; UX) <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#g%e1%bb%a3i-%c3%bd-c%e1%ba%a5u-tr%c3%bac-b%c3%a0i-cho-blog-seo--ux-1" aria-label="Anchor">#</a></span></h2><ul>
+<li>Tiêu đề rõ ràng, meta description ngắn gọn.</li>
+<li>Mục lục ở đầu bài cho bài dài.</li>
+<li>Code snippets có thể copy/run.</li>
+<li>Các phần &ldquo;Bạn sẽ học được&rdquo; và &ldquo;Bắt đầu nhanh (5 phút)&rdquo;.</li>
+</ul>
+<h2 id="kết-luận-1" class="relative group">Kết luận <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#k%e1%ba%bft-lu%e1%ba%adn-1" aria-label="Anchor">#</a></span></h2><p>JavaScript là ngôn ngữ cốt lõi của phát triển web hiện đại: dễ bắt đầu, đa năng và có hệ sinh thái đồ sộ. Hãy bắt đầu từ cơ bản, thực hành qua ví dụ nhỏ, sau đó mở rộng sang ES6, asynchronous, và một framework bạn chọn. Tiếp theo bạn có thể đọc bài viết chi tiết về &ldquo;Biến, kiểu dữ liệu và toán tử trong JavaScript&rdquo; — bài này sẽ là nền tảng tốt để tiếp tục.</p>
+<h2 id="gợi-ý-bài-tiếp-theo-để-viết-cho-blog-1" class="relative group">Gợi ý bài tiếp theo để viết cho blog <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#g%e1%bb%a3i-%c3%bd-b%c3%a0i-ti%e1%ba%bfp-theo-%c4%91%e1%bb%83-vi%e1%ba%bft-cho-blog-1" aria-label="Anchor">#</a></span></h2><ul>
+<li>Biến &amp; kiểu dữ liệu trong JavaScript (chi tiết + ví dụ)</li>
+<li>Hàm, scope và closure (để tránh lỗi phổ biến)</li>
+<li>Promises và async/await (với ví dụ fetch API)</li>
+<li>So sánh React vs Vue (khi học framework)</li>
+<li>Bảo mật front-end cơ bản (XSS, CSP, sanitize input)</li>
+</ul>
+<pre tabindex="0"><code></code></pre>
+      </div>
+    </section>
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+  <div class="flex">
+    
+    
+    
+      
+      
+    
+    <div class="place-self-center">
+      
+        <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+          Author
+        </div>
+        <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+          Trần Thái Vinh
+        </div>
+      
+      
+      <div class="text-2xl sm:text-lg">
+</div>
+    </div>
+  </div>
+
+
+      
+
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="group flex" href="http://localhost:1313/ThsVinh/Blog.github.io/posts/java-vs-javascript/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Sự khác nhau giữa Java vs JavaScript</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-10-20 17:14:15 &#43;0700 &#43;07">October 20, 2025</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="group flex text-right" href="http://localhost:1313/ThsVinh/Blog.github.io/posts/suc-manh-java-va-javascript/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Sức mạnh của Java và JavaScript trong phát triển phần mềm hiện đại 🌍</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-10-21 00:00:00 &#43;0000 UTC">October 21, 2025</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[-2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&rarr;</span
+                ><span class="ltr:hidden rtl:inline">&larr;</span></span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+      </main>
+      
+        <div
+          class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12"
+          id="to-top"
+          hidden="true"
+        >
+          <a
+            href="#the-top"
+            class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+            aria-label="Scroll to top"
+            title="Scroll to top"
+          >
+            &uarr;
+          </a>
+        </div>
+      <footer class="py-10 print:hidden">
+  
+  
+  <div class="flex items-center justify-between">
+    <div>
+      
+      
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+            &copy;
+            2025
+            Trần Thái Vinh
+        </p>
+      
+      
+      
+        <p class="text-xs text-neutral-500 dark:text-neutral-400">
+          
+          
+          Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+            href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://github.com/jpanther/congo" target="_blank" rel="noopener noreferrer">Congo</a>
+        </p>
+      
+    </div>
+    <div class="flex flex-row items-center">
+      
+      
+      
+      
+    </div>
+  </div>
+  
+  
+</footer>
+
+    </div>
+  </body>
+</html>
