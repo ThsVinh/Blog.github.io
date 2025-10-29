@@ -12,15 +12,8 @@ description: "Trang cá nhân của Trần Thái Vinh – Lập trình viên Ful
 Chào mừng bạn đến với blog của tôi!  
 Tôi là **Trần Thái Vinh**, một **lập trình viên Full-Stack** với niềm đam mê mãnh liệt dành cho **công nghệ, code sạch, và sáng tạo phần mềm**.
 
-<<<<<<< HEAD
+
 Trong suốt **4 năm học tại trường Hutech**, tôi đã không ngừng học hỏi và trau dồi kỹ năng ở cả **frontend** lẫn **backend**, hướng đến mục tiêu xây dựng **ứng dụng mạnh mẽ, thân thiện và dễ bảo trì**.
-=======
-<<<<<<< HEAD:content/about/_index.md
-Trong suốt **4 năm học ở trường Hutech**, tôi đã không ngừng học hỏi và trau dồi kỹ năng ở cả **frontend** lẫn **backend**, hướng đến mục tiêu xây dựng **ứng dụng mạnh mẽ, thân thiện và dễ bảo trì**.
-=======
-Trong suốt **4 năm sinh viên và học tập tại trường**, tôi đã không ngừng học hỏi và trau dồi kỹ năng ở cả **frontend** lẫn **backend**, hướng đến mục tiêu xây dựng **ứng dụng mạnh mẽ, thân thiện và dễ bảo trì**.
->>>>>>> 17ee709efc6a14e8663dea51a185482f0bbb5e63:content/about.md
->>>>>>> 2d894ff19ad32d51a9d2dd0f0f258ea7b2f09e9a
 
 > 💡 Tôi tin rằng **code tốt không chỉ chạy được — mà phải dễ hiểu, dễ mở rộng, và truyền cảm hứng cho người khác.**
 
